@@ -1,10 +1,11 @@
 CACHE MANIFEST
-# Time: Wed Apr 01 2015 17:47:29 GMT+0000 (UTC)
+# Time: Wed May 27 2015 17:40:00 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/index.html
 addons/badges/giving-and-requesting-badges/index.html
 addons/badges/index.html
+addons/forummerge/index.html
 addons/gigya/index.html
 addons/googleplus/index.html
 addons/groups/index.html
@@ -19,6 +20,7 @@ addons/ranks/using-ranks-to-defeat-spam-or-abuse/index.html
 addons/reactions/adding-and-editing-reactions/index.html
 addons/reactions/curating-with-reactions/index.html
 addons/reactions/index.html
+addons/redirector/index.html
 addons/reporting/index.html
 addons/statistics/index.html
 addons/warnings-and-notes/adding-and-editing-user-notes/index.html
@@ -87,6 +89,9 @@ features/index.html
 features/mobile/index.html
 features/moderation/index.html
 features/notifications/index.html
+features/roles-permissions/default-role-types.md/index.html
+features/roles-permissions/default-role-types/index.html
+features/roles-permissions/index.html
 features/setup/index.html
 features/sso/index.html
 features/wordpress/index.html
@@ -113,12 +118,12 @@ theming/smarty/text/index.html
 theming/views/index.html
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 assets/img/logo.9bdefa97.svg
-assets/main.4867715a.js
+assets/main.1a882952.js
 assets/main.9df6bc5d.css
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.ee06d0f7.json
+search.93b8865f.json
 
 NETWORK:
 *

@@ -16,6 +16,9 @@
     <loc>http://docs.vanillaforums.com/addons/badges/giving-and-requesting-badges</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/addons/forummerge</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/addons/gigya</loc>
   </url>
   <url>
@@ -53,6 +56,9 @@
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/addons/reactions/curating-with-reactions</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/addons/redirector</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/addons/reporting</loc>
@@ -257,6 +263,12 @@
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/notifications</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/roles-permissions</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/roles-permissions/default-role-types</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/setup</loc>
