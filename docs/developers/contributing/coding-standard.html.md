@@ -257,7 +257,7 @@ class Foo {
 The `extends` and `implements` keywords MUST be declared on the same line as
 the class name.
 
-The opening brace for the class MUST go on its own line; the closing brace
+The opening brace for the class MUST go on the same line as the class name; the closing brace
 for the class MUST go on the next line after the body.
 
 ```php
@@ -315,7 +315,7 @@ Method names SHOULD NOT be prefixed with a single underscore to indicate
 protected or private visibility.
 
 Method names MUST NOT be declared with a space after the method name. The
-opening brace MUST go on its own line, and the closing brace MUST go on the
+opening brace MUST go on the same line as the method name, and the closing brace MUST go on the
 next line following the body. There MUST NOT be a space after the opening
 parenthesis, and there MUST NOT be a space before the closing parenthesis.
 
@@ -340,7 +340,7 @@ The major exception to this rule is Event Methods.  Any method that has the foll
 '_before',
 '_override',
 '_after',
-'controller_
+'controller_'
 ```
 
 Event methods MUST be `camelCase` separated by `_`.
