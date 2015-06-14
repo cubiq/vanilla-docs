@@ -12,9 +12,9 @@ The best way to access the database is via existing [models](/developers/framewo
 
 ### Building queries
 
-The `SQL` object supports chaining. You can call it with `Gdn::SQL()`.
+The `SQL` object supports chaining. You can call it with `Gdn::sql()`.
 
-Here's a simple example that gets a single discussion by its ID. We write its pieces in the order of a SQL statement, but they can be called in any order up to the `Get`. The `Get` is the call that fires the built query.
+Here's a simple example that gets a single discussion by its ID. We write its pieces in the order of a SQL statement, but they can be called in any order up to the `get()`. The `get()` is the call that fires the built query.
 
 ```
 Gdn::sql()->
@@ -77,7 +77,7 @@ Gdn::sql()->update('Conversation')
 
 ### Direct queries
 
-The `Query` method allows for sending unfiltered SQL queries to the database. This is strongly discouraged because it can easily cause security flaws, performance problems, and compatibility problems.
+The `query()` method allows for sending unfiltered SQL queries to the database. This is strongly discouraged because it can easily cause security flaws, performance problems, and compatibility problems.
 
 ```
 Gdn::sql()->query("select * from GDN_Comments");
@@ -85,7 +85,7 @@ Gdn::sql()->query("select * from GDN_Comments");
 
 ### Structure
 
-Vanilla allows you to define database structures in code. Use the `Gdn::Database()->Structure()` object. Here we'll look at part of the definition of the User table as an example:
+Vanilla allows you to define database structures in code. Use the `Gdn::database()->structure()` object. Here we'll look at part of the definition of the User table as an example:
 
 
 ```
