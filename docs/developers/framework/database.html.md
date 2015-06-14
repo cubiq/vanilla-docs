@@ -17,18 +17,18 @@ The `SQL` object supports chaining. You can call it with `Gdn::SQL()`.
 Here's a simple example that gets a single discussion by its ID. We write its pieces in the order of a SQL statement, but they can be called in any order up to the `Get`. The `Get` is the call that fires the built query.
 
 ```
-Gdn::SQL()->
-   ->Select('*')
-   ->From('Discussion')
-   ->Where('DiscussionID', $DiscussionID)
-   ->Get();
+Gdn::sql()->
+   ->select('*')
+   ->from('Discussion')
+   ->where('DiscussionID', $DiscussionID)
+   ->get();
 ```
 
 Note that this is an impractical query to use in your addon, because this functionality already exists in a model: 
 
 ```
 $DiscussionModel = new DiscussionModel();
-$DiscussionModel->GetID($DiscussionID);
+$DiscussionModel->getID($DiscussionID);
 ```
 
 Always use pre-existing calls in models when they are available for better performance and forward-compatibility.
@@ -36,21 +36,21 @@ Always use pre-existing calls in models when they are available for better perfo
 Here's an example of a complex select that pulls out all the stops:
 
 ```
-Gdn::SQL()
-   ->Select('cm.*')
-   ->Select('iu.Name', '', 'InsertName')
-   ->From('ConversationMessage cm')
-   ->Join('Conversation c', 'cm.ConversationID = c.ConversationID')
-   ->Join('UserConversation uc', 'c.ConversationID = uc.ConversationID and uc.UserID = '.$ViewingUserID, 'left')
-   ->Join('User iu', 'cm.InsertUserID = iu.UserID', 'left')
-   ->BeginWhereGroup()
-   ->Where('uc.DateCleared is null')
-   ->OrWhere('uc.DateCleared <', 'cm.DateInserted', TRUE, FALSE)
-   ->EndWhereGroup()
-   ->Where('cm.ConversationID', $ConversationID)
-   ->OrderBy('cm.DateInserted', 'asc')
-   ->Limit($Limit, $Offset)
-   ->Get();
+Gdn::sql()
+   ->select('cm.*')
+   ->select('iu.Name', '', 'InsertName')
+   ->from('ConversationMessage cm')
+   ->join('Conversation c', 'cm.ConversationID = c.ConversationID')
+   ->join('UserConversation uc', 'c.ConversationID = uc.ConversationID and uc.UserID = '.$ViewingUserID, 'left')
+   ->join('User iu', 'cm.InsertUserID = iu.UserID', 'left')
+   ->beginWhereGroup()
+   ->where('uc.DateCleared is null')
+   ->orWhere('uc.DateCleared <', 'cm.DateInserted', TRUE, FALSE)
+   ->endWhereGroup()
+   ->where('cm.ConversationID', $ConversationID)
+   ->orderBy('cm.DateInserted', 'asc')
+   ->limit($Limit, $Offset)
+   ->get();
 ```
 
 Notice the use of limit, offset, where groups, where conditions including less than & null, aliasing, and multiple joins.
@@ -60,7 +60,7 @@ Notice the use of limit, offset, where groups, where conditions including less t
 An insert is a single step that takes the table name and an array of values to insert as parameters:
 
 ```
-Gdn::SQL()->Insert('UserConversation', array(
+Gdn::sql()->insert('UserConversation', array(
    'ConversationID' => $ConversationID,
    'UserID' => $TargetUserID
 ));
@@ -69,10 +69,10 @@ Gdn::SQL()->Insert('UserConversation', array(
 An update requires setting the table in `Update`, ends with a `Put` (much like the select's ending `Get`):
 
 ```
-Gdn::SQL()->Update('Conversation')
-   ->Set('LastMessageID', $MessageID)
-   ->Where('ConversationID', $ConversationID)
-   ->Put();
+Gdn::sql()->update('Conversation')
+   ->set('LastMessageID', $MessageID)
+   ->where('ConversationID', $ConversationID)
+   ->put();
 ```
 
 ### Direct queries
@@ -80,7 +80,7 @@ Gdn::SQL()->Update('Conversation')
 The `Query` method allows for sending unfiltered SQL queries to the database. This is strongly discouraged because it can easily cause security flaws, performance problems, and compatibility problems.
 
 ```
-Gdn::SQL()->Query("select * from GDN_Comments");
+Gdn::sql()->query("select * from GDN_Comments");
 ```
 
 ### Structure
@@ -89,20 +89,20 @@ Vanilla allows you to define database structures in code. Use the `Gdn::Database
 
 
 ```
-Gdn::Database()->Structure()
-   ->PrimaryKey('UserID')
-   ->Column('Name', 'varchar(50)', FALSE, 'key')
-   ->Column('Password', 'varbinary(100)') 
-   ->Column('ShowEmail', 'tinyint(1)', '0')
-   ->Column('Gender', array('u', 'm', 'f'), 'u')
-   ->Column('Preferences', 'text', TRUE)
-   ->Column('DateOfBirth', 'datetime', TRUE)
-   ->Column('Score', 'float', NULL)
-   ->Set();
+Gdn::database()->structure()
+   ->primaryKey('UserID')
+   ->column('Name', 'varchar(50)', FALSE, 'key')
+   ->column('Password', 'varbinary(100)') 
+   ->column('ShowEmail', 'tinyint(1)', '0')
+   ->column('Gender', array('u', 'm', 'f'), 'u')
+   ->column('Preferences', 'text', TRUE)
+   ->column('DateOfBirth', 'datetime', TRUE)
+   ->column('Score', 'float', NULL)
+   ->set();
 ```
 
-`Column` takes 4 parameters: name, type, nulldefault (`true` to allow nulls, `false` to not - any other value becomes the default with disallowed nulls), and keytype ('primary', 'key', 'index', 'unique', or 'fulltext' - defaults to false). 
+`column()` takes 4 parameters: name, type, nulldefault (`true` to allow nulls, `false` to not - any other value becomes the default with disallowed nulls), and keytype ('primary', 'key', 'index', 'unique', or 'fulltext' - defaults to false). 
 
-`PrimaryKey` creates an auto-incrementing column. The Gender column uses an array to create an `enum` type; the rest are self-explanatory. 
+`primaryKey()` creates an auto-incrementing column. The Gender column uses an array to create an `enum` type; the rest are self-explanatory. 
 
-The `Set()` method takes 2 parameters which should nearly _always_ be false, which is their default. The first is `$Explicit` which is whether to force the structure of the table to match _exactly_ the definition above. The second is `$Drop` which is whether to drop and recreate the table. 
+The `set()` method takes 2 parameters which should nearly _always_ be false, which is their default. The first is `$Explicit` which is whether to force the structure of the table to match _exactly_ the definition above. The second is `$Drop` which is whether to drop and recreate the table. 

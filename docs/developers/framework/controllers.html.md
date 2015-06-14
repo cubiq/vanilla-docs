@@ -20,7 +20,7 @@ An example that includes all of these is: `/dashboard/profile/notifications/1/Li
 
 ```
 $ProfileController = new ProfileController();
-$ProfileController->Notifications('1', 'Lincoln');
+$ProfileController->notifications('1', 'Lincoln');
 ```
 
 If the application is omitted, it will automatically search enabled applications for a suitably named controller. Therefore, avoid controller name overlap. If the method name is omitted, the `Index()` method will be invoked. Therefore, the basic profile URL `/profile/1/Lincoln` could be more verbosely written as `/dashboard/profile/index/1/Lincoln` to more clearly understand what code it is invoking.

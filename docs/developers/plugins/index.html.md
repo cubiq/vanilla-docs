@@ -13,7 +13,7 @@ Vanilla is a very customizable, flexible platform because there are many ways to
 Any class that extends the class "Pluggable" has the ability to call
 
 ```
-$this->FireEvent('EventName');
+$this->fireEvent('EventName');
 ```
 and then plugins can attach to that event to perform an action. 
 
@@ -23,9 +23,9 @@ Plugins attach to an event by creating a method named with the object name, even
 
 ```
 class MyPlugin extends GDN_Plugin() {
-   public function DiscussionsController_Kaboom_Handler($Sender, $Args) {
+   public function discussionsController_kaboom_handler($Sender, $Args) {
    	  // Do stuff at the 'Kaboom' event here.
-   	  $Sender->Index(); // You can invoke DiscussionsController methods here.
+   	  $Sender->index(); // You can invoke DiscussionsController methods here.
    }
 }
 ```
@@ -35,7 +35,7 @@ For example:
 
 ```
 $this->EventArguments['DuckDodgers'] &= '24.5';
-$this->FireEvent('Kaboom');
+$this->fireEvent('Kaboom');
 ```
 
 Now in our `Handler` method above, $Args would be an array of `'DuckDodgers' => '24.5'`. If we set `$Args['DuckDodgers'] = 0;` in our `Handler` method, it would also be changed back in the `DiscussionsController` because it was passed by reference.
@@ -47,9 +47,9 @@ Custom events are added on a case-by-case basis as the need arises. If you feel 
 
 ### Magic Events
 
-Magic events were an elaborate system of hook possibilities that involved the method prefix 'x' and PHP's `__call()` method. Currently, there is only one undeprecated magic event in Vanilla: `Render_Before`. It invokes just before the page is rendered. Example use: `Base_Render_Before($Sender)`. **It is best to avoid when another event is usable.**
+Magic events were an elaborate system of hook possibilities that involved the method prefix 'x' and PHP's `__call()` method. Currently, there is only one undeprecated magic event in Vanilla: `render_before`. It invokes just before the page is rendered. Example use: `base_render_before($Sender)`. **It is best to avoid when another event is usable.**
 
-For a better alternative hook that reliably fires early on every request, try `Gdn_Dispatcher_AppStartup_Handler` instead. To universally include a CSS file, use `AssetModel_StyleCss_Handler`.
+For a better alternative hook that reliably fires early on every request, try `gdn_dispatcher_appStartup_handler` instead. To universally include a CSS file, use `assetModel_styleCss_handler`.
 
 
 ### Function Overrides
@@ -57,8 +57,8 @@ For a better alternative hook that reliably fires early on every request, try `G
 All functions in the framework are declared like so:
 
 ```
-if (!function_exists('FunctionName')) {
-   function FunctionName() {
+if (!function_exists('functionName')) {
+   function functionName() {
    	  // Do something.
    }
 }
@@ -71,9 +71,9 @@ Plugin authors may therefore override any core function simply by defining it in
 
 Magic methods allow you to create new methods and add them to existing objects. They are created in much the same way that you plug into events. Imagine you wanted to add a method named `Kaboom` to the DiscussionsController:
 
-````
+```
 class MyPlugin extends Gdn_Plugin {
-   public function DiscussionsController_Kaboom_Create($Sender) {
+   public function discussionsController_kaboom_create($Sender) {
         echo "Kaboom!";
    }
 }
@@ -85,33 +85,43 @@ If you use a magic method to duplicate an existing method name, it will be overr
 
 Magic methods only work in classes that extend `Gdn_Pluggable`. For example, notice the `Gdn_Form` class does, but the `Gdn_Format` class does not. All models and controllers do.
 
-
 ### Controllers
 
 Is your addon a bit more complex? Add a `controllers` folder and add your own controller classes. They will automatically be detected and be dispatched to like normal controllers. This functionality is new in Vanilla 2.3.
 
 As a reminder, controllers should extend Gdn_Controller. [Read more about controllers](/developers/framework/controllers).
 
-
 ### Virtual Controller
 
-A virtual controller let you simulate a single controller within a plugin. First, create a magic method using the namespace you want for your controller. Example: `PluginController_NewNamespace_Create`. This creates content under the URL `/plugin/newnamespace`. To put NewNamespace as the first level (instead of under "plugins") use the RootController. End the magic method with a re-dispatch: `$this->Dispatch($Sender, $Sender->RequestArgs);`.
+A virtual controller let you simulate a single controller within a plugin. First, create a magic method using the namespace you want for your controller. Example: `pluginController_newNamespace_create`. This creates content under the URL `/plugin/newnamespace`. To put NewNamespace as the first level (instead of under "plugins") use the RootController. End the magic method with a re-dispatch: `$this->dispatch($Sender, $Sender->RequestArgs);`.
 
-Next, create methods named `Controller_X`, where X is the method namespace. Example: `Controller_Index($Sender)`.
+Next, create methods named `Controller_X`, where X is the method namespace. Example: `controller_index($Sender)`.
 
 Let's put it all together with a quick example. Let's say you wanted to create content at `/fancy/ping`. This would accomplish that:
 
 ```
 <?php
+/**
+ * File-level doc blocks are for @license, @copyright, and @author tags.
+ */
 
+/**
+ * Class-level doc blocks should summarize what the class is for.
+ */
 class MyFancyPlugin extends Gdn_Plugin () {
 
-   public function RootController_Fancy_Create($Sender) {
+	/**
+	 * Always document your methods.
+	 */
+   public function rootController_fancy_create($Sender) {
    	   // This is a good place to check permissions or include assets.
-	   $this->Dispatch($Sender, $Sender->RequestArgs);
+	   $this->dispatch($Sender, $Sender->RequestArgs);
    }
 
-   public function Controller_Ping($Sender) {
+	/**
+	 * Include @param and @return in your docs too.
+	 */
+   public function controller_ping($Sender) {
 	   // This is what happens when you call /fancy/ping.
    }
 }

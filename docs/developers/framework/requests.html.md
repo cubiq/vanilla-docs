@@ -42,12 +42,12 @@ You can define a `DeliveryMethod` by appending it to your request like `Delivery
 
 Vanilla parses incoming URLs and parameters for you. There is rarely any reason to directly access PHP globals like `$_GET`. The `Gdn_Request` class (in `/library/core/class.request.php`) handles this for you.
 
-`Gdn::Request()->Domain()` will return the current domain. These methods also work as you'd expect: `Host`, `IpAddress`, `Path`, and `Port`. You can also call `Get` and `Post` with a parameter name to see its current value. See `Gdn_Request` for more request data.
+`Gdn::request()->domain()` will return the current domain. These methods also work as you'd expect: `Host`, `IpAddress`, `Path`, and `Port`. You can also call `Get` and `Post` with a parameter name to see its current value. See `Gdn_Request` for more request data.
 
 A few more useful methods:
 
-Use `Gdn::Request()->IsAuthenticatedPostback()` to check that the current user sent a `POST` request along with their TransientKey to protect against CSRF attacks. All forms built with Vanilla include a TransientKey.
+Use `Gdn::request()->isAuthenticatedPostback()` to check that the current user sent a `POST` request along with their TransientKey to protect against CSRF attacks. All forms built with Vanilla include a TransientKey.
 
-Use `Gdn::Request()->Url()` to build safe URLs to other parts of Vanilla. The  `Url()` function is a shortcut to this method.
+Use `Gdn::request()->url()` to build safe URLs to other parts of Vanilla. The  `url()` function is a shortcut to this method.
 
-Use `Gdn::Request()->RequestMethod()` to find out which Vanilla method was called by the current request.
+Use `Gdn::request()->requestMethod()` to find out which Vanilla method was called by the current request.
