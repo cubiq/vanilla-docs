@@ -85,11 +85,11 @@ Gdn::sql()->query("select * from GDN_Comments");
 
 ### Structure
 
-Vanilla allows you to define database structures in code. Use the `Gdn::database()->structure()` object. Here we'll look at part of the definition of the User table as an example:
+Vanilla allows you to define database structures in code. Use the `Gdn::structure()` method to use this object. Here we'll look at part of the definition of the User table as an example:
 
 
 ```
-Gdn::database()->structure()
+Gdn::structure()
    ->primaryKey('UserID')
    ->column('Name', 'varchar(50)', FALSE, 'key')
    ->column('Password', 'varbinary(100)') 
