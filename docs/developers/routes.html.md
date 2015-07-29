@@ -11,12 +11,12 @@ Route management allows you to create custom urls to specific pages within your 
 ####Pre-defined Routes
 
 There are four pre-defined routes that have special meaning. They are:
-DefaultController - This is the main page to load when the root url of your Vanilla installation is viewed.
-
+* **DefaultController** - This is the main page to load when the root url of your Vanilla installation is viewed.
 * **Default404** - The page to view when the requested url could not be found.
 * **DefaultPermission** - The page to view when the user attempted to perform an action they didn't have permission for.
 * **UpdateMode** - The page to view when Vanilla has been taken offline for maintenance.
-* **DefaultController** is the one you will most likely be working with the most, and by default it is set to "discussions" with an "internal" route type, which means that it will essentially be the same as sending the user to www.yourdomain.com/path/to/vanilla/root/discussions.
+
+**DefaultController** is the one you will most likely be working with the most, and by default it is set to "discussions" with an "internal" route type, which means that it will essentially be the same as sending the user to www.yourdomain.com/path/to/vanilla/root/discussions.
 
 ####Custom Routes
 
