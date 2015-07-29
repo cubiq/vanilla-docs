@@ -4,11 +4,11 @@ layout: docs
 categories: ["Developers"]
 ---
 
-##Routes##
+## Routes
 
 Route management allows you to create custom urls to specific pages within your Vanilla 2 installation. It also comes with some pre-defined default values.
 
-####Pre-defined Routes####
+#### Pre-defined Routes
 
 There are four pre-defined routes that have special meaning. They are:
 * **DefaultController** - This is the main page to load when the root url of your Vanilla installation is viewed.
@@ -18,7 +18,7 @@ There are four pre-defined routes that have special meaning. They are:
 
 **DefaultController** is the one you will most likely be working with the most, and by default it is set to "discussions" with an "internal" route type, which means that it will essentially be the same as sending the user to www.yourdomain.com/path/to/vanilla/root/discussions.
 
-####Custom Routes####
+#### Custom Routes
 
 Custom routes allow you to create more "user-friendly" urls for commonly requested pages in your installation. For example, if you had a popular discussion at the following url: 
 
@@ -32,7 +32,7 @@ You could create a route to this discussion by adding a new custom route with th
 
 With this route in place, users will be able to get at your hampster discussion by going to: http://yourdomain.com/community/hampsters. Your old URL will continue to work as well, and this will not affect search engine ranking as we tell the search engines what the canonical url is for every page (Google will treat duplicate routes to the same content as one page).
 
-####Route Types####
+#### Route Types
 
 There are three different route types. They are:
 
