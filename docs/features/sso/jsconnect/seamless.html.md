@@ -1,5 +1,5 @@
 ---
-title: Seamless SSO with jsConnect
+title: jsConnect Seamless Setup
 layout: docs
 categories: ["Features","Single Sign-On","jsConnect"]
 ---

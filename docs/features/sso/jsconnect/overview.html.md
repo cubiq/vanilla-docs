@@ -1,5 +1,5 @@
 ---
-title: Single Sign-On with jsConnect
+title: jsConnect Technical Overview
 layout: docs
 categories: ["Features","Single Sign-On","jsConnect"]
 ---

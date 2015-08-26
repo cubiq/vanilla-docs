@@ -1,5 +1,5 @@
 ---
-title: Single Sign-On with SAML
+title: SSO with SAML
 layout: docs
 categories: ["Features","Single Sign-On","SAML"]
 ---

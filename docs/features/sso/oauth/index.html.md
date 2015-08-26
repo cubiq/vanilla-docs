@@ -1,5 +1,5 @@
 ---
-title: Single Sign-On with OAuth
+title: SSO with OAuth
 layout: docs
 categories: ["Features","Single Sign-On","OAuth"]
 ---
@@ -14,5 +14,5 @@ Vanilla currently provides OAuth2 integrations with these third-party services a
 * Twitter
 * LinkedIn
 * Google+
-* [Gigya]()
 
+Contact the Vanilla Support Team for more information.
