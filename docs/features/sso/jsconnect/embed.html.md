@@ -13,7 +13,9 @@ First, we'll address another important issue: Mobile Safari. <strong>Attempting 
 Now, on to revising your embed code with some additional SSO information.
 <h2>The Vanilla Embed Code</h2>
 Consider the embed code for Vanilla comments:
-<pre>&lt;script type="text/javascript"&gt;
+
+```
+&lt;script type="text/javascript"&gt;
 
 /*** Required Settings: Edit BEFORE pasting into your web page ***/
 
@@ -32,7 +34,9 @@ vanilla.src = vanilla_forum_url + '/js/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(vanilla);
 })();
 
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
+
 If you declare <strong>vanilla_sso</strong> and give it the proper value then Vanilla will be able to sign in your user. Here is what you need to do to generate your sso string.
 <ol>
 	<li>Start with the signed in user. This has the same fields as the user from the <a title="jsConnect Technical Documentation Part 1: Site-Wide SSO" href="http://blog.vanillaforums.com/implementing-jsconnect/jsconnect-technical-documentation/">site-wide sso</a>.</li>
