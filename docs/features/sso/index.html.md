@@ -22,4 +22,4 @@ If you have a website that stores your user's identity and the only thing you ne
 
 However, even our easier solution does require a developer on your team. A developer can typically set up the client side of jsConnect in 2-6 hours using our [technical documentation](/features/sso/jsconnect/overview). The only exception is **WordPress** users, for which we've developed a ready-to-go [SSO plugin](http://wordpress.org/plugins/vanilla-jsconnect).
 
-Ready to learn more about jsConnect? Our [concepts overview](/features/sso/jsconnect/overview) is where to head next.
+Ready to learn more about jsConnect? Our [concepts overview](/features/sso/jsconnect) is where to head next.
