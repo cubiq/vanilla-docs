@@ -33,7 +33,7 @@ There is a [WordPress plugin](https://wordpress.org/plugins/vanilla-forums/) ava
 
 If you are using different blog software, you will need to edit the blog template and replace the existing blog comments with the code that can be found in the Dashboard under Forum>Blog Comments. Use our Universal Code, the code snippet can be modified to create discussion threads in the appropriate forum category based on the blog post category.
 
-### What does Vanilla uses as an excerpt from my blog article when creating a blog comment discussion?
+### What does Vanilla use as an excerpt from my blog article when creating a blog comment discussion?
 
 When Vanilla creates a discussion thread based on a blog article, it will grab the blog title, the first few lines of the blog text and an image. You can use Open Graph meta tags to specify what image should be used. Otherwise, it grabs the first 4 images on the page and finds the "best" one it can - i.e. the biggest image that is at least 100x100, but smaller than 800px wide and not banner-shaped.
 
