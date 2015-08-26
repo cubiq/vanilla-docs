@@ -42,7 +42,7 @@
     <!-- bower:js -->
     <script src="/jquery/dist/jquery.js"></script>
     <script src="/bootstrap/js/scrollspy.js"></script>
-    <script src="/bootstrap/js/affix.js"></script>
+    <!--<script src="/bootstrap/js/affix.js"></script>-->
     <script src="/lunr.js/lunr.js"></script>
     <script src="/store.js/store.js"></script>
     <script src="/components-webfontloader/webfont.js"></script>

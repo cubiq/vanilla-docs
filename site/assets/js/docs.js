@@ -120,7 +120,7 @@
 
   $panelCol.css('min-height', $docsNav.outerHeight(true));
 
-  if ($(window).outerHeight() < $footer.position().top) {
+  /*if ($(window).outerHeight() < $footer.position().top) {
     $docsNav.affix({
       offset: {
         top: function () {
@@ -131,6 +131,6 @@
         }
       }
     });
-  }
+  }*/
 
 })(jQuery, window, document);
