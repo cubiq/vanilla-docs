@@ -25,14 +25,14 @@ layout: default
 
   <div class="row">
 
-    <div class="col-sm-2">
+    <div class="col-sm-3">
       <nav class="docs-nav js-docs-nav" role="navigation">
         <%- @partial 'nav', false, items: @tree 'docs', @document %>
-        <p class="hidden-xs"><a class="text-muted" href="#top"><strong>Back to top</strong></a></p>
+        <p class="hidden-xs"><a class="text-muted" href="#top">^ Back to top</a></p>
       </nav>
     </div>
 
-    <div class="col-sm-10">
+    <div class="col-sm-9">
       <div class="edit-doc pull-right hidden-xs">
         <a class="btn btn-default btn-xs" href="https://github.com/vanilla/vanilladocs/edit/master/docs/<%= @document.relativePath %>">Improve document</a>
       </div>
