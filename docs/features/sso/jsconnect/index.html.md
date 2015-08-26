@@ -51,8 +51,21 @@ Clicking the "Sign In" button in Vanilla generates an asynchronous request **in 
 
 ![](/features/sso/images/jsconnect-overview.png)
 
+## Two Flavors of SSO
+There are two implementations of SSO that jsConnect supports. You can implement either of the methods or both as they serve different purposes.
+
+### Method 1: Site-Wide SSO
+You implement site-wide SSO when Vanilla is as a full site. With this method you need to create a page that provides your login information in jsonp format.
+
+### Method 2: Embedded SSO
+Vanilla also has the ability to be embedded in an html page either as an entire site or just as embedded comments. With this scenario you need to create a special SSO string that can be passed to the embedded Vanilla and provide login information.
+
 ## Make it seamless
 
-When setting up a jsConnect connection, you have the option to specify it as "default". Doing this attaches it to the special `/sso` endpoint in Vanilla. When a user clicks "Forum" in your website's navigation, instead of linking to the forum homepage, instead link them to the `/sso` page. This will auto-fire the asynchronous call back to your website rather than waiting for the user to click "sign in", then drops them on the homepage as normal.
+When setting up a jsConnect connection in full-site mode, you have the option to specify it as "default". Doing this attaches it to the special `/sso` endpoint in Vanilla. When a user clicks "Forum" in your website's navigation, instead of linking to the forum homepage, instead link them to the `/sso` page. This will auto-fire the asynchronous call back to your website rather than waiting for the user to click "sign in", then drops them on the homepage as normal.
 
 For more information, read our [technical overview](/features/sso/jsconnect/overview).
+
+## WordPress plugin
+
+If your site is using WordPress then we make a plugin that allows you to use SSO with your WordPress site. It also helps you set up an embedded forum and embedded comments on your site. <a href="http://wordpress.org/extend/plugins/vanilla-forums/" target="_blank">Get the plugin</a>.
