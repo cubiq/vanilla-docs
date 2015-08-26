@@ -4,9 +4,9 @@ layout: docs
 categories: ["Features","Single Sign-On","jsConnect"]
 ---
 
-## jsConnect Technical Overview
+# jsConnect Technical Overview
 
-For jsConnect to work you'll put some code on your site that identifies your users in a way that Vanilla can understand. Vanilla then requests this information when the user wants to sign in and synchronizes the user with Vanilla. This is done via <a href="http://en.wikipedia.org/wiki/JSONP" target="_blank">JSONP</a>, which allows us to send your cookies from your site to you and obtain login information.
+For jsConnect to work you'll put some code on your site that identifies your users in a way that Vanilla can understand. Vanilla then requests this information when the user wants to sign in and synchronizes the user with Vanilla. This is done via [JSONP](http://en.wikipedia.org/wiki/JSONP), which allows us to send your cookies from your site to you and obtain login information.
 
 Vanilla's web-based single sign on (SSO) has 2 parts:
 
@@ -15,7 +15,7 @@ Vanilla's web-based single sign on (SSO) has 2 parts:
 
 jsConnect pings your endpoint whenever it wants to know if a user is logged in on your site. It does this using the user's current session, so you can use your normal "is logged in" detection to determine this - nothing fancy here.
 
-### Your endpoint
+## Your endpoint
 
 Your endpoint needs to say 1 of 3 things when it's called:
 
@@ -27,16 +27,16 @@ Our example libaries help you structure the output so that jsConnect can read it
 
 These libraries are open source and maintained on Github:
 
-* <a href="https://github.com/vanillaforums/jsConnectPHP">PHP jsConnect client library</a>
-* <a href="https://github.com/vanillaforums/jsConnectRuby">Ruby jsConnect client library</a>
-* <a href="https://github.com/vanillaforums/jsConnectJava">Java jsConnect client library</a>
-* <a href="https://github.com/vanillaforums/jsConnectdotNet">.NET jsConnect client library</a>
+* [PHP jsConnect client library](https://github.com/vanillaforums/jsConnectPHP)
+* [Ruby jsConnect client library](https://github.com/vanillaforums/jsConnectRuby)
+* [Java jsConnect client library](https://github.com/vanillaforums/jsConnectJava)
+* [.NET jsConnect client library](https://github.com/vanillaforums/jsConnectdotNet)
 
 All of these libraries have one file with all of the library code you'll need and one file that gives an example usage. They also have a readme that tells you which file is which. _Please note that these libraries don't support [embedded SSO](/features/sso/jsconnect/embed)._
 
 If your site is programmed in a language that doesn't have a client library then we provide documentation on our jsConnect protocol. Have a look at the [jsConnect technical implementation](/features/sso/jsconnect/seamless).
 
-### How jsConnect maps users
+## How jsConnect maps users
 
 After calling your endpoint and getting a "signed in" reply, jsConnect looks up the user. If they've _already_ used SSO, we've permanently mapped their unique ID to our UserID, so we sign them into that account. If they _haven't_ used SSO before, 1 of 3 things happens:
 
@@ -46,7 +46,7 @@ After calling your endpoint and getting a "signed in" reply, jsConnect looks up 
 
 Vanilla Cloud customers should request Support enable `AutoConnect` if they desire it. That is an important component of a seamless experience.
 
-### Tightening the integration
+## Tightening the integration
 
 To get very tight SSO integration, you will also want to follow these steps. Always carefully test your _basic_ SSO authentication **before** tightening your integration.
 
@@ -56,14 +56,14 @@ To get very tight SSO integration, you will also want to follow these steps. Alw
 4. When linking or redirecting signed-in users to your forum, use the `/sso` endpoint on the forum. This triggers jsConnect's user lookup **on the connection with "default sign in method" selected** without the user needing to click. Optionally, you can provide a `Target` parameter with a relative path to specify where they should ultimately land on the forum. Example: `http://forum.yoursite.com/sso?Target=/categories`. This is the final critical step in a fully seamless experience.
 5. For seamless SSO on an embedded forum, see our [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
 
-### Testing the integration
+## Testing the integration
 
 Use the "Test URL" link under your jsConnect settings to see if your endpoint is returning a good response. 
 
 Try using your browser's Incognite/Private window mode for testing. This allows you to have a separate "test" session while you stay logged in as the administrator in your main session to make changes quickly.
 
 
-### Common questions
+## Common questions
 
 **What do we do if SSO breaks and we're locked out?**
 
@@ -103,7 +103,7 @@ We strongly recommend assigning them unique usernames in your system, then passi
 
 **Can we set roles over jsConnect?**
 
-Yes, see our [technical documentation](http://blog.vanillaforums.com/jsconnect-technical-documentation/) for more information.
+Yes, see our [technical documentation](/features/sso/jsconnect/seamless) for more information.
 
 **The settings & endpoint response look correct now, but it's still not working or redirecting properly.**
 
