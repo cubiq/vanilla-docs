@@ -4,7 +4,7 @@
 
 .docs-nav {
   margin-bottom: @line-height-computed;
-  font-size: 12px;
+  font-size: 14px;
 
   p {
     margin: @line-height-computed 0 0;
@@ -44,7 +44,7 @@
     }
 
     li {
-      margin: 5px 0;
+      margin: 4px 0;
 
       @media (max-width: @screen-xs-max) {
         margin: 10px 0;
@@ -55,7 +55,7 @@
         padding-right: 5px;
         line-height: @line-height-computed;
         color: #666;
-        border-right: transparent solid 2px;
+        /*border-right: transparent solid 2px;*/
 
         &:hover,
         &:focus {
@@ -67,6 +67,10 @@
       &.active > a {
         color: @brand-primary;
         border-color: @brand-primary;
+        font-weight: bold;
+        &:after {
+          content: ' »';
+        }
       }
 
       &.active > .nav {
@@ -75,10 +79,7 @@
 
       > .nav {
         display: none;
-
-        li > .nav {
-          padding-left: @padding-base-horizontal;
-        }
+        padding-left: @padding-base-horizontal;
       }
     }
   }
@@ -87,8 +88,7 @@
     margin-top: 0;
 
     > a {
-      font-weight: 600;
-      color: #aaa;
+      font-weight: bold
     }
   }
 }
