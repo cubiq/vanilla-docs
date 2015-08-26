@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Wed Aug 26 2015 13:34:08 GMT+0000 (UTC)
+# Time: Wed Aug 26 2015 14:05:09 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/index.html
@@ -99,7 +99,6 @@ features/sso/jsconnect/embed/index.html
 features/sso/jsconnect/index.html
 features/sso/jsconnect/overview/index.html
 features/sso/jsconnect/seamless/index.html
-features/sso/jsconnect/technical/index.html
 features/sso/oauth/index.html
 features/sso/saml/index.html
 features/wordpress/index.html
@@ -132,7 +131,7 @@ features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.74112ff9.json
+search.5131e554.json
 
 NETWORK:
 *
