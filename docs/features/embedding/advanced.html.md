@@ -91,22 +91,23 @@ If you supply the callback argument to `callRemote()` then it will be supplied a
       <div style="height: 50px">foo</div>
       <div id="embedVanilla"></div>
       <script type="text/javascript">
-         easyXDM.DomHelper.requiresJSON("js/easyXDM/json2.js"); // Help older browsers parse JSON.
+        // Help older browsers parse JSON.
+        easyXDM.DomHelper.requiresJSON("js/easyXDM/json2.js");
 
-         var vanillaEmbed = new Vanilla.embed({
-            // The element or its ID.
-            container: "embedVanilla",
-            // This is the location of the forum.
-            root: "http://yoursite.local",
-            // initial path, please start it with a "/"
-            initialPath: window.location.hash.substring(1),
-            onReady: function() {
-               // A lot of the functions need to be done after the embed is ready.
+        var vanillaEmbed = new Vanilla.embed({
+          // The element or its ID.
+          container: "embedVanilla",
+          // This is the location of the forum.
+          root: "http://yoursite.local",
+          // initial path, please start it with a "/"
+          initialPath: window.location.hash.substring(1),
+          onReady: function() {
+            // A lot of the functions need to be done after the embed is ready.
 
-               // This how you set the location of the embedded frame.
-               // vanillaEmbed.setLocation('/categories');
-            }
-         });
+            // This how you set the location of the embedded frame.
+            // vanillaEmbed.setLocation('/categories');
+          }
+        });
       </script>
    </body>
 </html>
