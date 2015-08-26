@@ -280,6 +280,27 @@
     <loc>http://docs.vanillaforums.com/features/sso</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/features/sso/jsconnect</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/jsconnect/embed</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/jsconnect/overview</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/jsconnect/seamless</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/jsconnect/technical</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/oauth</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/sso/saml</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/features/wordpress</loc>
   </url>
   <url>

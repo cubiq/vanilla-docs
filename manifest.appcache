@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Wed Aug 26 2015 12:38:22 GMT+0000 (UTC)
+# Time: Wed Aug 26 2015 12:54:37 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/index.html
@@ -95,6 +95,13 @@ features/roles-permissions/default-role-types/index.html
 features/roles-permissions/index.html
 features/setup/index.html
 features/sso/index.html
+features/sso/jsconnect/embed/index.html
+features/sso/jsconnect/index.html
+features/sso/jsconnect/overview/index.html
+features/sso/jsconnect/seamless/index.html
+features/sso/jsconnect/technical/index.html
+features/sso/oauth/index.html
+features/sso/saml/index.html
 features/wordpress/index.html
 features/wordpress/using-comments/index.html
 features/wordpress/wishlist/index.html
@@ -120,11 +127,12 @@ theming/views/index.html
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 assets/img/logo.9bdefa97.svg
 assets/main.1d95b109.js
-assets/main.eca23849.css
+assets/main.35df199b.css
+features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.8c4c09f8.json
+search.4d4fe74d.json
 
 NETWORK:
 *
