@@ -23,17 +23,16 @@ Your endpoint needs to say 1 of 3 things when it's called:
 2. User is logged in here, but this wasn't a secure request, so here's his name & photo only.
 3. User is logged in AND this was securely requested, so here's all the requested data (including email and a unique ID from your system, which are required).
 
-Our example libaries help you structure the output so that jsConnect can read it correctly. <strong>If we provide a client library that you can use then we highly recommend using it.</strong>
+Our example libaries help you structure the output so that jsConnect can read it correctly. **If we provide a client library that you can use then we highly recommend using it.**
 
 These libraries are open source and maintained on Github:
-<ul>
-	<li><a title="PHP jsConnect client library" href="https://github.com/vanillaforums/jsConnectPHP">PHP jsConnect client library</a></li>
-	<li><a title="Ruby jsConnect client library" href="https://github.com/vanillaforums/jsConnectRuby">Ruby jsConnect client library</a></li>
-	<li><a title="Java jsConnect client library" href="https://github.com/vanillaforums/jsConnectJava">Java jsConnect client library</a></li>
-	<li><a title=".NET jsConnect client library" href="https://github.com/vanillaforums/jsConnectdotNet">.NET jsConnect client library</a></li>
-</ul>
 
-All of these libraries have one file with all of the library code you'll need and one file that gives an example usage. They also have a readme that tells you which file is which. <em>Please note that these libraries don't support [embedded SSO](/features/sso/jsconnect/embed).</em>
+* <a href="https://github.com/vanillaforums/jsConnectPHP">PHP jsConnect client library</a>
+* <a href="https://github.com/vanillaforums/jsConnectRuby">Ruby jsConnect client library</a>
+* <a href="https://github.com/vanillaforums/jsConnectJava">Java jsConnect client library</a>
+* <a href="https://github.com/vanillaforums/jsConnectdotNet">.NET jsConnect client library</a>
+
+All of these libraries have one file with all of the library code you'll need and one file that gives an example usage. They also have a readme that tells you which file is which. _Please note that these libraries don't support [embedded SSO](/features/sso/jsconnect/embed)._
 
 If your site is programmed in a language that doesn't have a client library then we provide documentation on our jsConnect protocol. Have a look at the [jsConnect technical implementation](/features/sso/jsconnect/seamless).
 
