@@ -26,7 +26,7 @@ Data that can currently be passed over SSO with jsConnect:
 * Photo URL
 * Roles (Vanilla's permissions management groups)
 
-When receiving an SSO response, Vanilla will do a lookup by **email address** againt the forum database. If it finds a match and the user connects, a **permanent mapping** is made agains the unique ID your provided. This means future email changes on your side do not effect the login process.
+When receiving an SSO response, Vanilla will do a lookup by **email address** against the forum database. If it finds a match and the user connects, a **permanent mapping** is made against the unique ID your provided. This means future email changes on your side do not effect the login process.
 
 If no email match is found, a new forum account will be created instantly using the provided data. If no username is provided, the user will be prompted to create one.
 

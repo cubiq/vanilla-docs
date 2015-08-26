@@ -65,7 +65,7 @@ For site-wide SSO you'll need to make a page on <strong>your site</strong> that 
 </ul>
 <h3> <strong>Response</strong></h3>
 There are four valid responses you can return depending on the request and whether or not the user is signed in.
-<h4>No User Repsonse: The user is not signed in to your site .</h4>
+<h4>No User Response: The user is not signed in to your site .</h4>
 callback({"name": "", "photourl": ""});
 
 <strong>Notes</strong>: Even if there is no user signed in you still must return a valid jsonp response. So in this case we just return an empty user.
