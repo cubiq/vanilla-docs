@@ -8,6 +8,9 @@ module.exports = {
     , exclude: [
         '404.html'
       ]
+    , process: function (path) {
+        return (path === 'index.html') ? '/' : path.replace('\/index.html', '')
+      }
     }
   , src: [
       '**/index.html'
