@@ -76,7 +76,6 @@ If you supply the callback argument to `callRemote()` then it will be supplied a
 ```html
 <html>
    <head>
-      <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
       <style>
          body {
             margin: 0;
@@ -95,11 +94,14 @@ If you supply the callback argument to `callRemote()` then it will be supplied a
          easyXDM.DomHelper.requiresJSON("js/easyXDM/json2.js"); // Help older browsers parse JSON.
 
          var vanillaEmbed = new Vanilla.embed({
-            container: "embedVanilla", // The element or its ID.
-            root: "http://yoursite.local", // This is the location of the forum.
-            initialPath: window.location.hash.substring(1), // initial path, please start it with a "/"
+            // The element or its ID.
+            container: "embedVanilla",
+            // This is the location of the forum.
+            root: "http://yoursite.local",
+            // initial path, please start it with a "/"
+            initialPath: window.location.hash.substring(1),
             onReady: function() {
-               // A lot of the functions you perform need to be done after the embed is ready.
+               // A lot of the functions need to be done after the embed is ready.
 
                // This how you set the location of the embedded frame.
                // vanillaEmbed.setLocation('/categories');
