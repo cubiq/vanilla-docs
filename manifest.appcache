@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Wed Aug 26 2015 15:04:40 GMT+0000 (UTC)
+# Time: Wed Aug 26 2015 16:41:24 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/index.html
@@ -84,6 +84,7 @@ developers/routes/index.html
 developers/tools/index.html
 developers/troubleshooting/index.html
 features/categories/index.html
+features/embedding/advanced/index.html
 features/embedding/index.html
 features/emjoi/index.html
 features/index.html
@@ -126,12 +127,12 @@ theming/views/index.html
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 assets/img/logo.9bdefa97.svg
 assets/main.679204c0.js
-assets/main.eca23849.css
+assets/main.fe5c4043.css
 features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.bedea0e9.json
+search.d990daeb.json
 
 NETWORK:
 *
