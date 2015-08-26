@@ -1,5 +1,5 @@
 ---
-title: jsConnect Technical Overview
+title: Technical Overview
 layout: docs
 categories: ["Features","Single Sign-On","jsConnect"]
 ---

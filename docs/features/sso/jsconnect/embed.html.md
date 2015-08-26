@@ -1,5 +1,5 @@
 ---
-title: Embedded SSO
+title: Embedded
 layout: docs
 categories: ["Features","Single Sign-On","jsConnect"]
 ---

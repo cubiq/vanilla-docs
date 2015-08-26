@@ -4,6 +4,8 @@ layout: docs
 menu: Home
 ---
 
+# Vanilla Forums Documentation
+
 You can contribute to these docs via the [GitHub repository](https://github.com/vanilla/vanilladocs).
 
 Vanilla Forums consists of both an [open source project](https://github.com/vanilla/vanilla) and a [cloud hosting solution](http://vanillaforums.com). The documents cover five major areas:
