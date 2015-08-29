@@ -9,7 +9,7 @@ module.exports = {
         '404.html'
       ]
     , process: function (path) {
-        return (path === 'index.html') ? '/' : path.replace('\/index.html', '')
+        return (path === 'index.html') ? '/' : path.replace('\/index.html', '/')
       }
     }
   , src: [
