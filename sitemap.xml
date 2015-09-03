@@ -103,6 +103,9 @@
     <loc>http://docs.vanillaforums.com/api/smart-id</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/api/use-api-on-external-site</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/cloud</loc>
   </url>
   <url>
@@ -208,12 +211,6 @@
     <loc>http://docs.vanillaforums.com/developers/framework/views</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/developers/how-tos</loc>
-  </url>
-  <url>
-    <loc>http://docs.vanillaforums.com/developers/how-tos/howto-use-api-on-external-site</loc>
-  </url>
-  <url>
     <loc>http://docs.vanillaforums.com/developers/importing</loc>
   </url>
   <url>
@@ -259,7 +256,7 @@
     <loc>http://docs.vanillaforums.com/features/embedding/advanced</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/features/emjoi</loc>
+    <loc>http://docs.vanillaforums.com/features/emoji</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/mobile</loc>

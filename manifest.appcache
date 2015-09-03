@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Sat Aug 29 2015 15:14:26 GMT+0000 (UTC)
+# Time: Thu Sep 03 2015 13:00:34 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -35,6 +35,7 @@ api/
 api/moderation/
 api/site-hub/
 api/smart-id/
+api/use-api-on-external-site/
 cloud/
 cloud/integration/
 cloud/migration/
@@ -69,8 +70,6 @@ developers/framework/modules/
 developers/framework/permissions/
 developers/framework/requests/
 developers/framework/views/
-developers/how-tos/howto-use-api-on-external-site/
-developers/how-tos/
 developers/importing/build/
 developers/importing/
 developers/importing/porter/
@@ -86,7 +85,7 @@ developers/troubleshooting/
 features/categories/
 features/embedding/advanced/
 features/embedding/
-features/emjoi/
+features/emoji/
 features/
 features/mobile/
 features/moderation/
@@ -127,12 +126,12 @@ theming/views/
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 assets/img/logo.9bdefa97.svg
 assets/main.679204c0.js
-assets/main.f8c00115.css
+assets/main.9923d00f.css
 features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.b5f04b79.json
+search.9b2ab151.json
 
 NETWORK:
 *
