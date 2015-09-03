@@ -1,11 +1,11 @@
 ---
-title: How to use the API on External Sites
+title: Use API on External Sites
 menu: API on External Sites
 layout: docs
 categories: ["Developers", "API"]
 ---
 
-## How to use the Vanilla Forums API to Display Data on External Sites
+# Using the API to display data on external sites
 
 The Vanilla Forums API can be used to display information from your community outside of the community such as your blog. This guide shows a basic example using javascript and jQuery.
 
