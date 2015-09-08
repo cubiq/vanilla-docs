@@ -10,6 +10,8 @@ The advanced embedding technique is for developers who require programmatic inte
 
 ## Setting Up Advanced Embedding
 
+Enable forum embedding via the Dashboard. Then set `Garden.Embed.Allow` to `2` in your config. _Cloud customers will have this done by support staff_.
+
 1. Include easyXDM: `/js/easyXDM/easyXDM.min.js`
 2. Include Vanilla's advanced embed script: `/js/vanilla.embed.js`
 3. Create a div to contain Vanilla and give it an ID.
@@ -25,19 +27,19 @@ Vanilla.embed() takes an associative array of options:
 
 `initialPath` **Optional**. The initial path to browse to when embedding the forum. Our example below demonstrates using the hash part of the URL to automatically set this, e.g. `site.com/embedpage#/categories/some-category`. 
 
-`sso` **Optional**. An SSO string that will automatically sign the user into Vanilla. See https://github.com/vanillaforums/jsConnectPHP/blob/master/functions.jsconnect.php#L130
+`sso` **Optional**. An SSO string that will automatically sign the user into Vanilla. See [our example code](https://github.com/vanillaforums/jsConnectPHP/blob/master/functions.jsconnect.php#L130).
 
-`autoStart` **Optional**. Whether or not to start the embed when `embed()` is called. If this is false then you must call embed.start() to start the embed. Default: true
+`autoStart` **Optional**. Whether or not to start the embed when `embed()` is called. If this is false then you must call embed.start() to start the embed. Default: `true`.
 
 `onReady()` **Optional**. A callback function to call when the embed is ready.
 
 `notifyLocation(path)` **Optional**. A function that will be called when the url of the embedded iframe changes. You can use this callback to update your history. By default this function adds the path as the current location's # fragment. Combine this with initialPath to implement your own custom history.
 
-`height(x)` **Optional**. A function that is called to set the height of the embedded iframe. If you override this method then you can access the embedded iframe using this.iframe.
+`height(x)` **Optional**. A function that is called to set the height of the embedded iframe. If you override this method then you can access the embedded iframe using `this.iframe`.
 
 ### Methods
 
-`start()` Start the embed. Only call this method if you set autoStart to false.
+`start()` Start the embed. Only call this method if you set autoStart to `false`.
 
 `setLocation(path)` Manually set the location of the embedded iframe. Just specify the path and not the full domain of the embed.
 
@@ -74,9 +76,12 @@ If you supply the callback argument to `callRemote()` then it will be supplied a
 ## Example implementation
 
 ```html
+<!DOCTYPE html>
 <html>
    <head>
-      <style>
+   	  <meta charset="utf-8">
+   	  <title>Sample Embed</title>
+   	  <style>
          body {
             margin: 0;
          }
