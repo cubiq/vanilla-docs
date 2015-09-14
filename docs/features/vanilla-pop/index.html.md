@@ -12,7 +12,7 @@ Vanilla Pop is a feature of Vanilla's Enterprise forums that allows you to inter
 - Reply to an emailed discussion on the forum or through email.
 - Have conversations through email, but keep a record on Vanilla.
 
-###Vanilla Pop Settings
+### Vanilla Pop Settings
 
 When you have Vanilla Pop enabled you will see an __Incoming Email__ item in your dashboard under Site Settings. The page looks like this:
 
