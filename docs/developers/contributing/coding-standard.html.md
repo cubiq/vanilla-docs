@@ -4,13 +4,23 @@ layout: docs
 categories: ["Developers", "Contributing"]
 ---
 
-As of May 2014, Vanilla will adhere to [PSR-2] (and therefore [PSR-1]) with a few exceptions. We will be mass-updating our source code over the rest of the year as needed. 
+# Coding Standard
 
-We've named our primary exception to PSR-2 **[Lord Brackos](https://twitter.com/linc/status/462308222427480065)** - Same-line open braces on all classes, method, and function definitions.
+As of May 2014, Vanilla will adhere to [PSR-2] (and therefore [PSR-1]) with a few exceptions. We have been mass-updating our source code as possible without breaking backwards compatibility (most notably by refraining from changing the casing of existing variables).
+
+We've named our primary exception to PSR-2 the **[Lord Brackos](https://twitter.com/linc/status/462308222427480065)** rule - Same-line open braces on all classes, method, and function definitions.
 
 We adopted this standard for all the usual reasons: our team is growing, and we want to make sure things stay consistent between our various projects, and it's annoying and hard to read when everything is styled differently. Key words in this document ("MUST", "SHOULD", etc.) are used as described in [RFC 2119] which is as boring and obvious as you expect but mercifully brief.
 
-### Check out CodeSniffer
+## PHP Version
+
+All code in `master` must work under PHP 5.4.
+
+All code in `release/2.2` must work under PHP 5.3.
+
+We currently plan to move to PHP 5.5 after the fork for 2.3. These plans may change with little notice.
+
+## Check out CodeSniffer
 
 CodeSniffer is a tool you can plug into your IDE to help you adhere to a coding standard like this one. This quick guide assumes you have both PEAR and homebrew with PHP 5.5 installed. 
 
