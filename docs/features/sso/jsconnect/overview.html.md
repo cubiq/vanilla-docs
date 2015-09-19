@@ -19,9 +19,9 @@ jsConnect pings your endpoint whenever it wants to know if a user is logged in o
 
 Your endpoint needs to say 1 of 3 things when it's called:
 
-1. The current user is a guest (not logged in).
-2. User is logged in here, but this wasn't a secure request, so here's his name & photo only.
-3. User is logged in AND this was securely requested, so here's all the requested data (including email and a unique ID from your system, which are required).
+1. The current user is a **guest** (not logged in).
+2. User is logged in here, but this wasn't a secure request (no signature + timestamp), so here's their **name & photo only**.
+3. User is logged in AND this was securely requested, so here's **all the user data** (including email and a unique ID from your system, which are required).
 
 Our example libaries help you structure the output so that jsConnect can read it correctly. **If we provide a client library that you can use then we highly recommend using it.**
 
