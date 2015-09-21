@@ -7,7 +7,7 @@
         </li>
       <% else: %>
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-          <a href="<%= item.url %>" itemprop="url">
+          <a href="<%= item.url %><%= "/" if item.url isnt "/" %>" itemprop="url">
             <span itemprop="title"><%= item.title %></span>
           </a>
         </li>
