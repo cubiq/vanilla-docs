@@ -2,7 +2,7 @@
   <ul class="nav nav-stacked">
     <% for item in items: %>
       <li<%= " class=active" if item.active %>>
-        <a href="<%= item.url %>"><%= item.title %></a>
+        <a href="<%= item.url %>/"><%= item.title %></a>
         <%- render item.children if item.children %>
       </li>
     <% end %>
