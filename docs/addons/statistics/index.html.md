@@ -1,5 +1,5 @@
 ---
-title: Vanilla Statistics
+title: Statistics
 layout: docs
 categories: ["Addons"]
 ---

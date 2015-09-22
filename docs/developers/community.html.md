@@ -1,5 +1,5 @@
 ---
-title: Developers Community
+title: Community
 layout: docs
 categories: ["Developers"]
 ---
