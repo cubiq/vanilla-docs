@@ -55,7 +55,6 @@
         padding-right: 5px;
         line-height: @line-height-computed;
         color: #666;
-        /*border-right: transparent solid 2px;*/
 
         &:hover,
         &:focus {
@@ -66,15 +65,34 @@
 
       &.active > a {
         color: @brand-primary;
-        border-color: @brand-primary;
         font-weight: bold;
-        &:after {
-          content: ' »';
-        }
       }
 
       &.active > .nav {
         display: block;
+        border-left: 1px solid @gray-lighter;
+
+        > .active > a {
+          position: relative;
+
+          &:before,
+          &:after {
+            position: absolute;
+            left: -16px;
+            content: "";
+          }
+
+          &:before {
+            top: -4px;
+            height: @line-height-computed + 8px;
+            border-left: 1px solid #fff;
+          }
+
+          &:after {
+            height: @line-height-computed;
+            border-left: 1px solid @brand-primary;
+          }
+        }
       }
 
       > .nav {
