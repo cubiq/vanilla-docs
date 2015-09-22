@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Tue Sep 22 2015 15:31:44 GMT+0000 (UTC)
+# Time: Tue Sep 22 2015 15:32:44 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -23,6 +23,7 @@ addons/reactions/
 addons/redirector/
 addons/reporting/
 addons/statistics/
+addons/vanilla-pop/
 addons/warnings-and-notes/adding-and-editing-user-notes/
 addons/warnings-and-notes/
 addons/warnings-and-notes/upgrading-from-warnings/
@@ -87,11 +88,9 @@ features/embedding/advanced/
 features/embedding/
 features/emoji/
 features/
-features/notifications/
 features/roles-permissions/default-role-types.md/
 features/roles-permissions/default-role-types/
 features/roles-permissions/
-features/setup/
 features/sso/
 features/sso/jsconnect/embed/
 features/sso/jsconnect/
@@ -99,7 +98,6 @@ features/sso/jsconnect/overview/
 features/sso/jsconnect/seamless/
 features/sso/oauth/
 features/sso/saml/
-features/vanilla-pop/
 features/wordpress/
 features/wordpress/using-comments/
 features/wordpress/wishlist/
@@ -123,15 +121,15 @@ theming/smarty/searchbox/
 theming/smarty/text/
 theming/views/
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
+addons/vanilla-pop/images/vanilla-pop.3f751dc2.png
 assets/img/logo.9bdefa97.svg
 assets/main.679204c0.js
 assets/main.6ca85029.css
 features/sso/images/jsconnect-overview.5a58a179.png
-features/vanilla-pop/images/vanilla-pop.3f751dc2.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.d195dc80.json
+search.3403dae2.json
 
 NETWORK:
 *

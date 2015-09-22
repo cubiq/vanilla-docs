@@ -67,6 +67,9 @@
     <loc>http://docs.vanillaforums.com/addons/statistics</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/addons/vanilla-pop</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/addons/warnings-and-notes</loc>
   </url>
   <url>
@@ -259,16 +262,10 @@
     <loc>http://docs.vanillaforums.com/features/emoji</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/features/notifications</loc>
-  </url>
-  <url>
     <loc>http://docs.vanillaforums.com/features/roles-permissions</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/roles-permissions/default-role-types</loc>
-  </url>
-  <url>
-    <loc>http://docs.vanillaforums.com/features/setup</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/sso</loc>
@@ -290,9 +287,6 @@
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/sso/saml</loc>
-  </url>
-  <url>
-    <loc>http://docs.vanillaforums.com/features/vanilla-pop</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/wordpress</loc>
