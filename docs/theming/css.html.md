@@ -5,13 +5,6 @@ categories: ["Theming"]
 ---
 
 ## Theming with CSS
----
-title: Theming CSS
-layout: docs
-categories: ["Theming"]
----
-
-## Theming with CSS
 
 ### Adding CSS to your theme
 
