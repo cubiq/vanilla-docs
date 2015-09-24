@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Tue Sep 22 2015 15:32:59 GMT+0000 (UTC)
+# Time: Thu Sep 24 2015 00:50:32 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -34,6 +34,7 @@ api/discussions/
 api/forum-administration/
 api/
 api/moderation/
+api/roles/
 api/site-hub/
 api/smart-id/
 api/use-api-on-external-site/
@@ -129,7 +130,7 @@ features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.039a23b4.json
+search.a4111ad5.json
 
 NETWORK:
 *
