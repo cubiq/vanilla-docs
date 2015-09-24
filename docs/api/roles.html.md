@@ -26,7 +26,7 @@ __`Description`__                   | `string`  | Description of this role
 `Permissions.Category.CategoryID`   | `integer` | The ID of the category to set the permission for.
 `Permissions.Category.*`            | `boolean` | Each custom category permission is a dot-separated key with a boolean value.
 
-## /roles/add
+## /roles/edit
 
 ```http
 POST /api/v1/roles/edit.ext HTTP/1.1
