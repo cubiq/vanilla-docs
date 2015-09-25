@@ -167,7 +167,7 @@ Here is how you sign the user with the secret.
 };</pre>
 </li>
 	<li>Now that you have your signed response you can display it as jsonp.</li>
-	<li>Your done!</li>
+	<li>You're done!</li>
 </ol>
 <h3><strong>Troubleshooting</strong></h3>
 <ul>
