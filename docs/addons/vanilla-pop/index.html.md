@@ -16,7 +16,7 @@ Vanilla Pop is a feature of Vanilla's Enterprise forums that allows you to inter
 
 When you have Vanilla Pop enabled you will see an __Incoming Email__ item in your dashboard under Site Settings. The page looks like this:
 
-![Vanilla Pop Settings](/features/vanilla-pop/images/vanilla-pop.png)
+![Vanilla Pop Settings](/addons/vanilla-pop/images/vanilla-pop.png)
 
 Let's run down the setting one by one:
 
