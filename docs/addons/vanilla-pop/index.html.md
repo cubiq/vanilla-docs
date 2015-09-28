@@ -18,7 +18,7 @@ When you have Vanilla Pop enabled you will see an __Incoming Email__ item in you
 
 ![Vanilla Pop Settings](/addons/vanilla-pop/images/vanilla-pop.png)
 
-Let's run down the setting one by one:
+Let's run down the settings one by one:
 
 __Your Forum's Email Address__
 
