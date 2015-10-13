@@ -12,23 +12,23 @@ Vanilla's cloud solution offers a number of configurations for enterprise-grade 
 
 ### Single Community
 
-This is a classic forum setup. It is the equivalent of 1 installation of forum software. It can have any number of categories (what other products call “topic areas” or “forums/subforums”) arranged in a hierarchy. Each Single Community needs a domain or subdomain assigned.
+This is a classic forum setup. It is the equivalent of 1 installation of forum software. It can have any number of **categories** (what other products call “topic areas” or “forums/subforums”) arranged in a hierarchy. Each **Single Community** needs a domain or subdomain assigned.
 
 ### The Hub
 
-A Hub is a community mothership. Setup one community as a template, then create Nodes that are copies of this setup. Each Node is a Single Community with the added ability of being synched with changes made on the Hub. Each Node is otherwise independent from each other - separate user lists, private message exchanges, and activity streams.
+A Hub is a community mothership. Setup one community as a template, then create Nodes that are copies of this setup. Each **Node** is a **Single Community** with the added ability of being synched with changes made on the Hub. Each Node is otherwise independent from each other - **separate** user lists, private message exchanges, and activity streams.
 
-Each Node is accessible via either a subdomain or a subfolder off a common domain. This is called the Hub URL Format. For example, the “muffins” Node in the “bakery” Hub might be accessible at the URLs “muffins.bakery.company.com”, or “bakery.company.com/muffins”, depending on the configuration. Only one type of Hub URL Format is supported per Hub.
+Each Node is accessible via either a subdomain *or* a subfolder off a domain shared by the whole Hub. This is called the **Hub URL Format**. For example, the “muffins” Node in the “bakery” Hub might be accessible at the URLs “muffins.bakery.company.com”, or “bakery.company.com/muffins”, depending on the configuration. Only one type of Hub URL Format is supported per Hub.
 
 ### Subcommunities
 
-This artificially divides a Single Community or a Node into different areas by making each of the top tier of categories into Subcommunities. While in any particular Subcommunity, all other content outside the subcommunity is completely hidden. A common use case for Subcommunities is localization.
+This artificially divides a **Single Community** *or* a **Node** into different areas by making each of the **top tier of categories** into Subcommunities. While in any particular Subcommunity, all other content outside the subcommunity is completely hidden. A common use case for Subcommunities is localization.
 
-All subcommunities are still part of a single “instance” - the user list (and therefore moderators / admins), private messages, and activity stream are shared across all subcommunities. 
+All subcommunities are still part of a single “instance” - the user list (and therefore moderators / admins), private messages, and activity stream are **shared** across all subcommunities. 
 
 Each subcommunity has its own URL path prefix. For instance, visiting the “Recent Discussions” page of the English subcommunity for “forum.company.com” would take the user to “forum.company.com/en/discussions”. The user would see only discussions that are in the subcategories under the “English” top tier category.
 
-A common way of combining this feature with the Hub is to create a Node per product, and use Subcommunities for each locale within that product.
+A common way of combining this feature with the **Hub** is to create a **Node** per product, and use Subcommunities for each locale within that product.
 
 ## Architectural considerations
 
