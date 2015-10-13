@@ -1,0 +1,55 @@
+---
+title: Multisite Features
+layout: docs
+categories: ["Cloud","Multisite"]
+---
+
+# Multisite Features
+
+Vanilla's cloud solution offers a number of configurations for enterprise-grade deployments.
+
+## Configurations
+
+### Single Community
+
+This is a classic forum setup. It is the equivalent of 1 installation of forum software. It can have any number of categories (what other products call “topic areas” or “forums/subforums”) arranged in a hierarchy. Each Single Community needs a domain or subdomain assigned.
+
+### The Hub
+
+A Hub is a community mothership. Setup one community as a template, then create Nodes that are copies of this setup. Each Node is a Single Community with the added ability of being synched with changes made on the Hub. Each Node is otherwise independent from each other - separate user lists, private message exchanges, and activity streams.
+
+Each node in a Hub is accessible either via a subdomain or a subfolder off a common domain. This is called the Hub Format. For example, the “carrots” Node in the “food” Hub might be accessible at the URLs “carrots.food.company.com”, or “food.company.com/carrots”, depending on the configuration. Only one type of Hub Format is supported per Hub.
+
+### Subcommunities
+
+This artificially divides a Single Community or a Node into different areas by making each of the top tier of categories into Subcommunities. While in any particular Subcommunity, all other content outside the subcommunity is completely hidden. A common use case for Subcommunities is localization.
+
+All subcommunities are still part of a single “instance” - the user list (and therefore moderators / admins), private messages, and activity stream are shared across all subcommunities. 
+
+Each subcommunity has its own URL path prefix. For instance, visiting the “Recent Discussions” page of the English subcommunity for “forum.company.com” would take the user to “forum.company.com/en/discussions”. The user would see only discussions that are in the subcategories under the “English” top tier category.
+
+A common way of combining this feature with the Hub is to create a Node per product, and use Subcommunities for each locale within that product.
+
+## Architectural considerations
+
+### Cluster management
+
+Our physical server assets are arranged into clusters. Each cluster can hold many Single Communities, or a single Hub + its Nodes. They cannot be mixed.
+
+### Scaling capabilities
+
+Because each Node is a separate entity, there are significant scaling advantages to choosing a Hub setup over a Single Community + Subcommunities setup.
+
+### Suggested setups
+
+For small-to-medium sites, use a Single Community. Add Subcommunities for multi-locale support or to combine several micro-forums into a single instance.
+
+For very large or franchise sites, use a dedicated Hub with a Node per locale. This provides maximum scaling potential.
+
+### Embedding (iframes)
+
+While we do support robust embedding (iframe) solutions, we strongly recommend avoiding it whenever possible. It drastically increases project complexity and negatively impacts user experience with longer page load time.
+
+### SSL certificates
+
+We will need SSL certificates that cover all potential custom domain names. For Hub setups, this generally means a wildcard certificate. See our documentation on [providing SSL certificates](/cloud/ssl).
