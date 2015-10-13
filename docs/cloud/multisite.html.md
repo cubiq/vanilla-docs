@@ -18,7 +18,7 @@ This is a classic forum setup. It is the equivalent of 1 installation of forum s
 
 A Hub is a community mothership. Setup one community as a template, then create Nodes that are copies of this setup. Each Node is a Single Community with the added ability of being synched with changes made on the Hub. Each Node is otherwise independent from each other - separate user lists, private message exchanges, and activity streams.
 
-Each node in a Hub is accessible either via a subdomain or a subfolder off a common domain. This is called the Hub Format. For example, the “carrots” Node in the “food” Hub might be accessible at the URLs “carrots.food.company.com”, or “food.company.com/carrots”, depending on the configuration. Only one type of Hub Format is supported per Hub.
+Each Node is accessible via either a subdomain or a subfolder off a common domain. This is called the Hub URL Format. For example, the “muffins” Node in the “bakery” Hub might be accessible at the URLs “muffins.bakery.company.com”, or “bakery.company.com/muffins”, depending on the configuration. Only one type of Hub URL Format is supported per Hub.
 
 ### Subcommunities
 
