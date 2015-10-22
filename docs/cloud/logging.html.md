@@ -12,16 +12,16 @@ The logs are available via a Dashboard page under "Event Log". They can be filte
 
 ## Events 
 
-We currently are able to log the following additional events for auditing purposes. 
+We are curently able to log the following additional events for auditing purposes.
 
 ### Authentication & Permissions:
 
 * signin_failure
-* password\_reset_request
-* password\_reset_failure
+* password_reset_request
+* password_reset_failure
 * password_reset
 * password_change
-* password\_change_failure
+* password_change_failure
 * session_start
 * session_end
 * security_denied (any permission error)
@@ -40,4 +40,4 @@ We currently are able to log the following additional events for auditing purpos
 
 * http_request
 * http_response
-* http\_response_error
+* http_response_error
