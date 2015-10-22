@@ -11,16 +11,16 @@ Additional logging is available on our higher-tier plans for an additional fee t
 
 ## Events 
 
-We curently are able to log the following additional events for auditing purposes. Please note these are stored and available upon request, but no interface is currently available in the Dashboard.
+We are curently able to log the following additional events for auditing purposes. Please note these are stored and available upon request, but no interface is currently available in the Dashboard.
 
 ### Authentication & Permissions:
 
 * signin_failure
-* password\_reset_failure
-* password\_reset_request
+* password_reset_failure
+* password_reset_request
 * password_reset
 * password_change
-* password\_change_failure
+* password_change_failure
 * session_start
 * session_end
 * security_denied (any permission error)
@@ -39,4 +39,4 @@ We curently are able to log the following additional events for auditing purpose
 
 * http_request
 * http_response
-* http\_response_error
+* http_response_error
