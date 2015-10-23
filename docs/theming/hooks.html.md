@@ -12,7 +12,7 @@ To use hooks, create a file named class.themehooks.php in your theme's root dire
 To get a better understanding of what the theme hooks are capable of, familiarize yourself with [custom events & handlers](http://docs.vanillaforums.com/developers/plugins/#custom-events-handlers), [magic events](http://docs.vanillaforums.com/developers/plugins/#magic-events), [function overrides](http://docs.vanillaforums.com/developers/plugins/#function-overrides), and [magic methods](http://docs.vanillaforums.com/developers/plugins/#magic-methods).
 
 
-Here's an example of a themehooks file that sets some config variables, adds locale data for the view, adds a respond button to the dicussion page, and overrides a method to add an extra css class to a menu count span.
+Here's an example of a themehooks file that sets some config variables, adds locale data for the view, adds a respond button to the discussion page, and overrides a method to add an extra css class to a menu count span.
 
 ```php
 <?php
@@ -24,7 +24,7 @@ Here's an example of a themehooks file that sets some config variables, adds loc
 
 /**
  * Sets config variables on enabling MyThemeName, adds locale data to the view,
- * and adds a respond button to the dicussion page.
+ * and adds a respond button to the discussion page.
  */
 class MyThemeNameThemeHooks implements Gdn_IPlugin() {
 
