@@ -12,9 +12,9 @@ It is extremely important to never modify Vanilla by directly editing the files 
 
 ### Quickstart
 
-To customize a [view](/theming/views), copy it to your theme in the appropriate location. To override [CSS](/theming/css), create a custom.css file in your theme; it will be included in the page after our CSS, so you can override without higher specificity or !importants in your rules. To use [hooks](/theming/hooks), create a file named class.themehooks.php and format it like a new plugin.
+To override [CSS](/theming/css), create a custom.css file in your theme; it will be included in the page after our CSS, so you can override without higher specificity or !importants in your rules. To use [hooks](/theming/hooks), create a file named class.themehooks.php and format it like a new plugin. To customize a [view](/theming/views), copy it to your theme in the appropriate location.
 
-The best way to get started with theming is to run thru our [Quickstart](/theming/quickstart) to build your own simple theme. Once you see how it's done, you'll be off to the races. We highly recommend basing your template on [Smarty](/theming/smarty).
+The best way to get started with theming is to run through our [Quickstart](/theming/quickstart) to build your own simple theme. Once you see how it's done, you'll be off to the races.
 
 ### Cloud upgrade considerations
 
