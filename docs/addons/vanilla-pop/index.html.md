@@ -26,7 +26,7 @@ This is the address that the application will send emails to, in order to intera
 
 __Email Directly into a category__
 
-You can also set up additional email addresses to forward to individual categories. To do this forward email to the appropriate categorycode, using the following syntax: categorycode.username@vanillacommunity.email.  The “categorycode”,  is the url-slug used for the category.
+You can also set up additional email addresses to forward to individual categories. To do this forward email to the appropriate categorycode, using the following syntax: categorycode.username@vanillacommunity.email.  The “categorycode”,  is the numerical value assigned for the category (hover over the catgeory url in your dashboard to get the number).
 
 __Default Category__
 
