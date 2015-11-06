@@ -1,5 +1,5 @@
 ---
-title: Models and Forms
+title: Models
 layout: docs
 categories: ["Developers","Framework"]
 ---
