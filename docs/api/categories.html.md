@@ -55,6 +55,7 @@ __`Category`__      | `string`  | Category to be edited (Name, use if no ID)
 `ParentCategory`    | `string`  | Parent Category (Name, use if no ID)
 `AllowDiscussions`  | `boolean` | Whether this category allows new discussions
 `Archived`          | `boolean` | Whether this category is archived
+`CustomPermissions` | `boolean` | Whether this category has custom permissions. Setting this to `false` will wipe custom permissions.
 `Permissions`       | `array`   | Custom permissions for the category. This must be an array with one item per role. Each item contains a role ID and the permissions to set.
 `Permissions.RoleID`| `integer` | The ID of the role to set the permissions for.
 `Permissions.*`     | `boolean` | Each permission is a dot-separated key with a boolean value. The basic permissions are Vanilla.Discussions.View, Vanilla.Discussions.Add, Vanilla.Discussions.Edit, Vanilla.Discussions.Announce, Vanilla.Discussions.Sink, Vanilla.Discussions.Close, Vanilla.Discussions.Delete, Vanilla.Comments.Add, Vanilla.Comments.Edit, Vanilla.Comments.Delete

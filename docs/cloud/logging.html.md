@@ -6,37 +6,38 @@ categories: ["Cloud"]
 
 # Advanced logging
 
-Additional logging is available on our higher-tier plans for an additional fee to cover the additional load & performance hit incurred by more verbose logs.
+Additional logging is available on our highest-tier plans for an additional fee to cover the additional load & performance hit incurred by more verbose logs.
 
+The logs are available via a Dashboard page under "Event Log". They can be filtered by date range, event name, and severity. Sorting is chronological or reverse-chronological.
 
 ## Events 
 
-We curently are able to log the following additional events for auditing purposes. Please note these are stored and available upon request, but no interface is currently available in the Dashboard.
+We are curently able to log the following additional events for auditing purposes.
 
 ### Authentication & Permissions:
 
 * signin_failure
-* password\_reset_failure
-* password\_reset_request
+* password_reset_request
+* password_reset_failure
 * password_reset
 * password_change
-* password\_change_failure
+* password_change_failure
 * session_start
 * session_end
 * security_denied (any permission error)
-* csrf_failure
+* csrf_failure (request may have been spoofed)
 
 ### Privileged actions:
 
 * theme_changed
 * addon_enabled
 * addon_disabled
+* role_add (user permissions modified)
 * role_remove
-* role_add
 * security_access (admin/moderator-only actions)
 
 ### Outgoing requests:
 
 * http_request
 * http_response
-* http\_response_error
+* http_response_error

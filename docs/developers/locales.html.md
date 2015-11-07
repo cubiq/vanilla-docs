@@ -8,9 +8,14 @@ categories: ["Developers","Locales"]
 
 Want to help us improve our translations? We have a [Transifex project](https://www.transifex.com/projects/p/vanilla/) for contributing to this. Create an account there and submit your improvements.
 
-Please make sure that your changes use generic terminology and good grammar that can apply to all forums and avoids interest- or region-specific terms.
+Need to customize the phrasing just on your site in particular? See "Overriding locales" below.
 
-Need to customize the phrasing on your site in particular? See "Overriding locales" below.
+## Translation tips
+
+Want to help translate? Awesome! Here are some tips for creating great translations.
+
+1. Please make sure that your changes use generic terminology and good grammar that can apply to all forums and avoids interest- or region-specific terms.
+2. Avoid HTML encoding of UTF-8 characters. For example, just use `ö`, not `&ouml;`. Vanilla's entire stack is UTF-8 so the former _always_ works, but our default emails are not HTML, so the latter will fail.
 
 ## Installing locales
 
