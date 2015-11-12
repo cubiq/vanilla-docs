@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Sat Nov 07 2015 17:47:04 GMT+0000 (UTC)
+# Time: Thu Nov 12 2015 18:53:20 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -59,11 +59,11 @@ developers/configuration/using/
 developers/contributing/coding-standard/
 developers/contributing/
 developers/contributing/pull-requests/
+developers/data-privacy/
 developers/framework/assets/
 developers/framework/controllers/
 developers/framework/database/
 developers/framework/datasets/
-developers/framework/forms/
 developers/framework/helpers/
 developers/framework/i18n/
 developers/framework/
@@ -125,13 +125,13 @@ theming/views/
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 addons/vanilla-pop/images/vanilla-pop.3f751dc2.png
 assets/img/logo.9bdefa97.svg
-assets/main.679204c0.js
+assets/main.9da51906.js
 assets/main.e5d3ed7a.css
 features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.566ed41b.json
+search.c111f7ad.json
 
 NETWORK:
 *

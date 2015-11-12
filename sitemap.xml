@@ -178,6 +178,9 @@
     <loc>http://docs.vanillaforums.com/developers/contributing/pull-requests</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/developers/data-privacy</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/developers/framework</loc>
   </url>
   <url>
@@ -191,9 +194,6 @@
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/developers/framework/datasets</loc>
-  </url>
-  <url>
-    <loc>http://docs.vanillaforums.com/developers/framework/forms</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/developers/framework/helpers</loc>
