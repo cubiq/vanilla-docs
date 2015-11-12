@@ -1,12 +1,16 @@
 ---
-title: Models
+title: Models, Forms, & Validation
 layout: docs
 categories: ["Developers","Framework"]
 ---
 
 ## Models
 
-The theory of a Model in MVC is that it is an object representation of the data being manipulated. In Garden, however, the actual object representation of the data comes from the DataSet class in the form of a php stdClass. So, as you may have guessed already, in Garden the model isn’t a representation of the data. In Garden, a model relates directly to a table, and (with the help of the database object) allows you to retrieve information from the table, enforce the schema of that table on the data being manipulated, and put data into the table. The real power of the Model class in Garden comes from it’s ability to examine the table from which it was created, and understand the data types and requirements for putting data into that table. When combined with Garden’s Validation and Form classes, it allows you to create forms with validation already built in. The Model class itself is quite simple, and can be used on any table in the database. Let’s take a look at a very basic example of how a model could be used to get some data from a database, validate data, and update data.
+[Datasets](/framework/datasets)
+[Controllers](/framework/controllers)
+[Views](/framework/views)
+
+The theory of a Model in MVC is that it is an object representation of the data being manipulated. In Garden, however, the actual object representation of the data comes from the DataSet class in the form of a php stdClass. So, as you may have guessed already, in Garden the model isn’t a representation of the data. In Garden, a model relates directly to a table, and (with the help of the database object) allows you to retrieve information from the table, enforce the schema of that table on the data being manipulated, and put data into the table. The real power of the Modhel class in Garden comes from it’s ability to examine the table from which it was created, and understand the data types and requirements for putting data into that table. When combined with Garden’s Validation and Form classes, it allows you to create forms with validation already built in. The Model class itself is quite simple, and can be used on any table in the database. Let’s take a look at a very basic example of how a model could be used to get some data from a database, validate data, and update data.
 
 ```php
 // Create a validation object to handle validation issues that the model will encounter:
