@@ -4,13 +4,13 @@ layout: docs
 categories: ["Cloud","Migration"]
 ---
 
-## Migration Services Overview
+# Migration Services Overview
 
 Vanilla offers full, professional migration services from nearly any platform imaginable. If you provide the data, we'll figure out how to make it work in Vanilla.
 
 The process below assumes you will provide a database dump. We also perform API-based migrations from cloud services when that is necessary and possible. Talk to your account representative if you require a different type of migration like this.
 
-### Estimating your migration
+## Estimating your migration
 
 1. You provide the platform name, version number (if applicable), and number of users & posts for your current community platform.
 2. Vanilla will provide an SFTP drop.
@@ -20,7 +20,7 @@ The process below assumes you will provide a database dump. We also perform API-
 6. Vanilla will evaluate the data and provide a cost estimate and, if requested, a downtime estimate (how long your forum will need to be offline during the transition).
 7. Vanilla will provide feedback on concerns, limitations, or other needs.
 
-### Test migration
+## Test migration
 
 1. Vanilla will import your test dump to a Vanilla forum.
 2. You review the test import and provide feedback on data integrity.
@@ -29,7 +29,7 @@ The process below assumes you will provide a database dump. We also perform API-
 5. Vanilla implements the 301 redirects and you test them.
 6. A final migration is scheduled.
 
-### Final migration
+## Final migration
 
 1. You place your current forum into read-only mode.
 2. You create a fresh data dump, upload it to Vanilla's SFTP, and notify your contact(s) at Vanilla.
@@ -40,7 +40,7 @@ The process below assumes you will provide a database dump. We also perform API-
 7. If your forum was previously on a domain not being redirected to your new forum, be sure to 301 redirect the folder (with the entire URL intact) to your new forum.
 8. You're done. Sweet!
 
-### Migration security
+## Migration security
 
 Migration data should always be sent to Vanilla via SFTP, available by request to your Account Manager. Data can optionally be encrypted using Vanilla's Public Key, provided below:
 
@@ -78,3 +78,11 @@ Migration data should always be sent to Vanilla via SFTP, available by request t
   =QysZ
   -----END PGP PUBLIC KEY BLOCK-----
   ```
+
+## Personally-identifiable information
+
+If a client does not wish to provide email addresses during a migration, we recommend forumlating dummy email addresses. We can do this automatically during the import if requested. Example: `{uniqueid}@yourdomain.com`, where `{uniqueid}` is your equivalent of our `UserID` - a non-private, unique identifier for the user.
+
+Most [single sign-on services](http://docs.vanillaforums.com/features/sso/) work by matching accounts based on email address. To work in this scenario, the authentication endpoint must contruct (or have on record) an identical dummy email address. This allows the seamless authentication of the user against the correct account without using real personal info.
+
+More information is available from our [Privacy Policy](https://vanillaforums.com/info/privacy) and our [developer docs on data privacy](/developers/data-privacy).
