@@ -81,7 +81,7 @@ Migration data should always be sent to Vanilla via SFTP, available by request t
 
 ## Personally-identifiable information
 
-If a client does not wish to provide email addresses during a migration, we recommend forumlating dummy email addresses. We can do this automatically during the import if requested. Example: `{uniqueid}@yourdomain.com`, where `{uniqueid}` is your equivalent of our `UserID` - a non-private, unique identifier for the user.
+If a client does not wish to provide email addresses during a migration, we recommend formulating dummy email addresses. We can do this automatically during the import if requested. Example: `{uniqueid}@yourdomain.com`, where `{uniqueid}` is your equivalent of our `UserID` - a non-private, unique identifier for the user.
 
 Most [single sign-on services](http://docs.vanillaforums.com/features/sso/) work by matching accounts based on email address. To work in this scenario, the authentication endpoint must contruct (or have on record) an identical dummy email address. This allows the seamless authentication of the user against the correct account without using real personal info.
 
