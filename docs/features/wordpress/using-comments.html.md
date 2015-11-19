@@ -12,6 +12,4 @@ The first is to import all your WordPress comments to Vanilla. You will need nee
 
 The second is to edit your WordPress template manually to show WordPress comments on posts published before the date of your switchover, and Vanilla comments after the date of your switchover. This would require some elementary PHP.
 
-[examples]
-
 The third option is to disable all *new* WordPress commenting, and manually add Vanilla Comments embed code in the template after WordPress. You'd also want to remove WordPress's "empty state" message for when there are no comments. This would have the effect of showing all old WordPress comments, followed by any new Vanilla comments, and then the Vanilla commenting box. Obviously this option is a little more complex, so I'd only do it if your comfort level with WordPress template editing is fairly high.
