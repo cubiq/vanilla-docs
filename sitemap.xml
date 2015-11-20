@@ -259,6 +259,12 @@
     <loc>http://docs.vanillaforums.com/features/categories</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/features/comments</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/comments/using-universal-comments</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/features/embedding</loc>
   </url>
   <url>
