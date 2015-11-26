@@ -10,7 +10,7 @@ Vanilla is built on an MVC framework named Garden. Its purpose is to provide an 
 
 Technically, Vanilla is a forum application (addon) built on top of the Garden framework. However, we typically refer to the entire stack as "Vanilla" for branding consistency and simplicity - including in these docs.
 
-If we had it all to do over, we would just call the whole thing "Vanilla" and name the forum application "Forum". But now we're stuck with GDN prefixes all over the place; cést la vie.
+If we had it all to do over, we would just call the whole thing "Vanilla" and name the forum application "Forum". But now we're stuck with GDN prefixes all over the place; c'est la vie.
 
 The framework is a secondary concern to the forum. In practice, this means if you request an ehancement or find a bug in a framework piece that isn't used anywhere in the forum, we'd love a pull request but it's unlikely we'll devote developer time to it. Time is precious, and we're building awesome forums not CodeIgniter 2 (or whatever the hip kids are using these days).
 
