@@ -14,7 +14,7 @@ categories: ["Developers","Framework"]
 <p>Modules are application-specific, and are located in the application's "modules" folder. To see all of the modules packaged with Garden, browse to <code>/applications/garden/modules</code>. If a module has an associated view, it can be found in the application's views/modules folder with the same name as the module file minus "class" and "module". For example, the view associated with the <code>/applications/garden/modules/class.guestmodule.php</code> is <code>/applications/garden/views/modules/guest.php</code>. Modules are extended from the Module class, which is like a very simple version of the controller class. They are typically used to display information in the Panel asset, but they can actually be used anywhere in the page. A module's default asset is defined with the AssetTarget method, which simply returns the name of the asset to add the module to by default.</p>
 <h2>Examples</h2>
 <p>The simplest modules will have just two methods: AssetTarget and ToString. Let's make a "Hello World" module. Create a file called class.helloworldmodule.php and place it in your test application's modules folder (if you don't have a test application, put it in Vanilla's modules folder). Open the file and enter the following:</p>
-<pre lang="php">class HelloWorldModule extends Module {
+<pre lang="php">class HelloWorldModule extends GDN_Module {
 
    public function AssetTarget() {
       return 'Panel';
@@ -26,7 +26,7 @@ categories: ["Developers","Framework"]
 }</pre>
 <p>Now let's go add it to a controller. Open up a controller in your test application and add the following (if you don't have a test application, use vanilla's controllers/discussions.php file and add it to the bottom of the index method) right above the call to $this-&gt;Render():</p>
 <pre lang="php">$this-&gt;AddModule('HelloWorldModule');</pre>
-<p>If you browse to this page, the text "Hello World!" will not appear in the panel. You can change where the "Hello World!" text appears either by changing the value returned by the AssetTarget method, or on the fly when the module is added by the controller. Let's change the AddModule call to send the module to the Content asset instead of the Panel:</p>
+<p>If you browse to this page, the text "Hello World!" will appear in the panel. You can change where the "Hello World!" text appears either by changing the value returned by the AssetTarget method, or on the fly when the module is added by the controller. Let's change the AddModule call to send the module to the Content asset instead of the Panel:</p>
 <pre lang="php">$this-&gt;AddModule('HelloWorldModule', 'Content');</pre>
 <p>Go back and refresh the page to see that the text has moved over to the Content asset. The AddModule method will take a string as the first parameter, or an instantiated module object. So, we could have also added the module in the following manner:</p>
 <pre lang="php">$HelloWorldModule = new HelloWorldModule();
