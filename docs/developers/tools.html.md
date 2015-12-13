@@ -8,83 +8,69 @@ categories: ["Developers"]
 
 Vanilla uses a wide range to tools and technologies to build its product. This list is simply to guide new developers getting acclimated to our ecosystem.
 
-### Standards & Formats
+### Languages, Standards & Formats
 
-* PHP
-* SQL (MySQL)
+* PHP & MySQL
 * Javascript
-* HTML
-* CSS
+* HTML & CSS
 * Smarty
-* Markdown
-* git
-* JSON
-* XML
-* RSS
+* Markdown & BBCode
+* JSON & XML
+* RSS & Atom
 
 ### Open Tools
 
+* git & GitHub
+* xdebug
+* PHPUnit
+* Composer
+* Hub
 * jQuery
-* Sass
-* Less
+* Sass & Less
 * HtmLawed
 * CodeSniffer
-* Jekyll
 * PHPMailer
-* Emoji
-
-### SaaS Tools
-
-* GitHub
-* TeamworkPM
-* HipChat
-* Transifex
-* Trello
 
 ### Internal Tools
 
-* Garden
-* Porter
-* Lithe
-* Infrastructure
-* Vanillicons
-* Minion
-* Jarvis
-
-### Integrations
-
-* WordPress
-* OAuth
-* OpenID
-* SimpleSAML
-* Gravatar
+* HipChat
+* TeamworkPM
+* Transifex
+* Google Docs
+* Garden HTTP
+* Garden Console
+* Vanilla Porter
+* Lithe mobile theme
+* Minion forumbot
+* Jarvis chatbot
 
 ### Cloud Stack
 
 * OpenStack
-* PHP 5.4
+* PHP 5.5
 * nginx
 * Percona
 * Varnish
 * memcached
-* APC
+* Zend OPcache
+* Sphinx
 
 ### Stacks Supported
 
-* Apache
-* IIS
-* MySQL
-* MariaDB
-* PHP 5.2 (thru Vanilla 2.1)
+* Unix, Windows, or OSX
+* nginx, Apache, or IIS
+* MySQL, Percona, or MariaDB
+* PHP 5.3 - 5.6 (as of Vanilla 2.2)
 
-### Common Apps
+### Common Dev Apps
 
-* PhpStorm
-* NetBeans
+* PhpStorm or NetBeans
 * Sequel Pro
-* YemuZip
-* Mou
+* Keka or YemuZip
+* MacDown or Mou
 * Kaleidoscope
+* Postman (Chrome App)
 * Balsamiq
-* TeamworkPM Timer
 * 1Password
+* DeckSet
+
