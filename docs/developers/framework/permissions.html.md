@@ -6,9 +6,9 @@ categories: ["Developers","Framework"]
 
 ## Permissions Overview
 
-Vanilla uses permissions to restrict access particular content, options, or workflows. There are a number of functions built into the framework to do this efficiently. We eschew role-detection as a means of access control. 
+Vanilla uses permissions to restrict access to particular content, options, or workflows. There are a number of functions built into the framework to do this efficiently. We eschew role-detection as a means of access control. 
 
-For example, we would never check to makde sure someone was in a role named Moderator before granting access to an option, we would check a permission like `Garden.Moderation.Manage`.
+For example, we would never check to make sure someone was in a role named Moderator before granting access to an option, we would check a permission like `Garden.Moderation.Manage`.
 
 ### Naming Permissions
 
@@ -55,7 +55,7 @@ You can use either method above to check multiple permissions by passing an arra
 
 By default, it will require ALL permissions named to pass. If you pass a second parameter of `false`, then only ONE of the permissions is needed to pass.
 
-You may find additional permission checks in Vanilla for permission names that do not appear in the Dashboard using this style: a normal permission name is passed in an array along with an "invisible" one. This is to allow plugins to define the additional permissions for more granular checks if neeeded.
+You may find additional permission checks in Vanilla for permission names that do not appear in the Dashboard using this style: a normal permission name is passed in an array along with an "invisible" one. This is to allow plugins to define the additional permissions for more granular checks if needed.
 
 ### The Owner Flag
 

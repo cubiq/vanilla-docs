@@ -12,10 +12,10 @@ If you have large quantities of data or data that is written frequently, conside
 
 ## Reading from config
 
-The `C` function is the appropriate shortcut for reading from the config. The first parameter is the name of the config value in [dot notation](/developers/configuration). The second is an optional default value to return if requested config setting is not defined.
+The `c` function is the appropriate shortcut for reading from the config. The first parameter is the name of the config value in [dot notation](/developers/configuration). The second is an optional default value to return if requested config setting is not defined.
 
 Example:
-`$Value = C('Name.Of.Setting', 'DefaultValue');`
+`$Value = c('Name.Of.Setting', 'DefaultValue');`
 
 You can call a partial config key to get an array of all values below it in dot notation. For instance, say this was in your config:
 
@@ -24,7 +24,7 @@ $Configuration['Example']['Settings']['A'] = 1;
 $Configuration['Example']['Settings']['B'] = 2;
 ```
 
-Now calling `C('Examples.Settings');` will return `array('A'=>1, 'B'=>2)`.
+Now calling `c('Examples.Settings');` will return `array('A'=>1, 'B'=>2)`.
 
 ## Writing to config
 
