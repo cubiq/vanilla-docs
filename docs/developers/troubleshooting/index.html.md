@@ -15,4 +15,4 @@ These are some generic tips for addressing problems during an upgrade.
 * Disable plugins. If you cannot get to your Dashboard, you can manually delete lines containing `EnabledPlugins` in `conf/config.php` but **do not remove HTMLawed's line**.
 * Try running `/utility/update` again (see upgrade instructions).
 * Verify your permissions and default role settings are correct for every role.
-* Start a **new discussion** on this site with your version number (likely 2.1 if you're reading this), the exact error message you got, and what you were doing when you got it.
+* Start a **new discussion** on this site with your version number (likely 2.2 if you're reading this), the exact error message you got, and what you were doing when you got it.
