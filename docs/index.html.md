@@ -16,6 +16,8 @@ Vanilla Forums consists of both an [open source project](https://github.com/vani
 * [Features](/features) - using Vanilla (covers both open source and cloud exclusives).
 * [Theming](/theming) - building a Vanilla theme.
 
+These documents are released under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/).
+
 ## Why go cloud-hosted?
 
 * No installation, upgrades, backups, maintenance, or testing required.
