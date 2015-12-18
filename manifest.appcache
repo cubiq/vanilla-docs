@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Sun Dec 13 2015 16:07:54 GMT+0000 (UTC)
+# Time: Fri Dec 18 2015 17:34:43 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -65,6 +65,7 @@ developers/framework/assets/
 developers/framework/controllers/
 developers/framework/database/
 developers/framework/datasets/
+developers/framework/email/
 developers/framework/helpers/
 developers/framework/i18n/
 developers/framework/
@@ -89,6 +90,7 @@ developers/troubleshooting/
 features/categories/
 features/comments/
 features/comments/using-universal-comments/
+features/emails/
 features/embedding/advanced/
 features/embedding/
 features/emoji/
@@ -137,7 +139,7 @@ features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.96a2f1be.json
+search.f17643bd.json
 
 NETWORK:
 *

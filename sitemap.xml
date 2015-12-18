@@ -199,6 +199,9 @@
     <loc>http://docs.vanillaforums.com/developers/framework/datasets</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/developers/framework/email</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/developers/framework/helpers</loc>
   </url>
   <url>
@@ -266,6 +269,9 @@
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/comments/using-universal-comments</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/features/emails</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/features/embedding</loc>
