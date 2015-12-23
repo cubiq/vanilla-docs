@@ -32,6 +32,8 @@ If no email match is found, a new forum account will be created instantly using 
 
 Data is synced at every new login. For instance, providing a different email address on the user's fifth login will still log them into the same account, but will update their Vanilla email address.
 
+The Photo URL is accepted only if the user has not uploaded their own avatar in the forum yet, and it is a valid URL. Imported avatars (if you migrated to Vanilla from another platform) count as the user having uploaded their own avatar.
+
 **We strongly recommend against creating new users via the API.** Our SSO solution lazy-creates new users for maximum robustness and reliability. Once a new user is created, you can optionally sync additional data about the user over API as needed.
 
 ## Unified user experience
