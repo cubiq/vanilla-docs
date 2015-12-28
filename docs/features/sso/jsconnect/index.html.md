@@ -70,4 +70,4 @@ For more information, read our [technical overview](/features/sso/jsconnect/over
 
 ## WordPress plugin
 
-If your site is using WordPress then we make a plugin that allows you to use SSO with your WordPress site. It also helps you set up an embedded forum and embedded comments on your site. <a href="http://wordpress.org/extend/plugins/vanilla-forums/" target="_blank">Get the plugin</a>.
+If your site is using WordPress then we make a plugin that allows you to use SSO with your WordPress site. It also helps you set up an embedded forum and embedded comments on your site. <a href="https://wordpress.org/plugins/vanilla-forums/" target="_blank">Get the plugin</a>.
