@@ -14,12 +14,12 @@ The EmailTemplate object helps to organize the components of an email and prepar
 
 These components are:
 
-* **Title**: An HTML-formatted or plaintext string.
-* **Lead**: An HTML-formatted or plaintext string.
-* **Message**: An HTML-formatted or plaintext string.
-* **Footer**: A collection of key/values including the footer text, and the background color and text color.
-* **Button**: A collection of key/values including the button text, the url, and the background color and text color.
-* **Image**: A collection of key/values including the image source url, the link url and alt text.
+* **Title**: A string, placed in a <h1> block before the rest of the email text in the default email template. Can be HTML-formatted or plaintext.
+* **Lead**: A string, placed just below the title with a font size between the title's and the message's in the default email template. Can be HTML-formatted or plaintext.
+* **Message**: A string, usually containing the meat of the email. Can be HTML-formatted or plaintext.
+* **Footer**: A collection of key/values including the footer text, and the background color and text color. Placed after the rest of the email content in the default email template. The text can be HTML-formatted or plaintext.
+* **Button**: A collection of key/values including the button text, the link url, and the background color and text color. Renders as a button-looking link in the default email template, but could also be formatted to appear as a simple link. Appears after the email message. The text can be HTML-formatted or plaintext.
+* **Image**: A collection of key/values including the image source url, the link url and alt text. Appears at the top of the email before any other content and has a max-width of 75% of its container in the default email template.
 
 An email can contain any or none of the above components.
 
@@ -29,7 +29,7 @@ The EmailTemplate object also has a set of colors that can be used in the templa
 
 ### EmailTemplate View
 
-The layout and use of the HTML EmailTemplate components is left up to the view. Vanilla provides a basic Smarty template with inline css styles for rendering.
+The layout and use of the HTML EmailTemplate components is left up to the view. Vanilla provides a basic Smarty template with inline css styles for rendering. This template lives in dashboard/views/email/email-basic.tpl. This is the default view for all HTML emails in Vanilla.
 
 A plugin or theme could specify a new php or Smarty template view using the setView() method on the EmailTemplate or by overriding the email-basic.tpl view.
 
@@ -37,7 +37,7 @@ For more info on overriding view from a plugin or theme, check out our [docs on 
 
 ### Default EmailTemplate Values
 
-The default color and image values for your application's email can be uploaded and configured from the Email settings page in the dashboard. These values can be overridden by explicitly setting the values in the setButton() or setImage() methods of an individual email's EmailTemplate.
+The default color and image values for your forum's emails can be uploaded and configured from the Email settings page in the dashboard. These values can be overridden by explicitly setting the values in the setButton() or setImage() methods of an individual email's EmailTemplate.
 
 ## Setting Up an Email
 
