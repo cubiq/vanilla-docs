@@ -1,7 +1,7 @@
 ---
 title: "{event}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{event}`

@@ -1,7 +1,7 @@
 ---
 title: "{link}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{link}`
@@ -21,5 +21,3 @@ __`path`__      | `string`  | none      | The relative path for the url. There a
 `notag`         | `boolean` | `false`   | Whether or not the output should be wrapped in a tag or just be a URL
 `format`        | `string`  | none      | Custom format to use when wrapping links. Available template variables are `%url`, `%class`, and `%text`
 `withdomain`    | `boolean` | `false`   | Whether or not to prepend the base (`http://your-forums.com/`) URL to the outputted link
-
-### Intelligent Links

@@ -1,7 +1,7 @@
 ---
 title: "{permission}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Block: `{permission}`

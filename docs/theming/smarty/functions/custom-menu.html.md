@@ -1,7 +1,7 @@
 ---
 title: "{custom_menu}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{custom_menu}`

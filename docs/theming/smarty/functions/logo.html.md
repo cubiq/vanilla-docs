@@ -1,7 +1,7 @@
 ---
 title: "{logo}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{logo}`

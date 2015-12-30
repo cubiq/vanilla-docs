@@ -1,7 +1,7 @@
 ---
 title: "{pocket}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{pocket}`
