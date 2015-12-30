@@ -45,6 +45,6 @@ $Definition['TranslationString4'] = "Override String 4";
 
 You can override your default locale by adding a `conf/locale.php` file to your installation with additional definitions. Any definitions in this file will override your locale.
 
-If you duplicate an entry's translation string, the latter one will take precedence. You can, however, assign the same override string to mulptiple translation strings.
+If you duplicate an entry's translation string, the latter one will take precedence. You can, however, assign the same override string to multiple translation strings.
 
 If you are using Multilingual to enable multiple locales, please note his override will effect **all** locales. There is currently no way to override multiple locales selectively.

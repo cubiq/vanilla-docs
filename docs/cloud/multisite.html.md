@@ -22,13 +22,13 @@ Each Node is accessible via either a subdomain *or* a subfolder off a domain sha
 
 ### Subcommunities
 
-This artificially divides a **Single Community** *or* a **Node** into different areas by making each of the **top tier of categories** into Subcommunities. While in any particular Subcommunity, all other content outside the subcommunity is completely hidden. A common use case for Subcommunities is localization.
+This artificially divides a **Single Community** *or* a **Node** into different areas by making each of the **top tier of categories** into subcommunities. While in any particular subcommunity, all other content outside the subcommunity is completely hidden. A common use case for subcommunities is localization.
 
-All subcommunities are still part of a single “instance” - the user list (and therefore moderators / admins), private messages, and activity stream are **shared** across all subcommunities. 
+All subcommunities are still part of a single “instance” - the user list (and therefore moderators / admins), private messages, and activity stream are **shared** across all subcommunities.
 
 Each subcommunity has its own URL path prefix. For instance, visiting the “Recent Discussions” page of the English subcommunity for “forum.company.com” would take the user to “forum.company.com/en/discussions”. The user would see only discussions that are in the subcategories under the “English” top tier category.
 
-A common way of combining this feature with the **Hub** is to create a **Node** per product, and use Subcommunities for each locale within that product.
+A common way of combining this feature with the **Hub** is to create a **Node** per product, and use subcommunities for each locale within that product.
 
 ## Architectural considerations
 
@@ -38,11 +38,11 @@ Our physical server assets are arranged into clusters. Each cluster can hold man
 
 ### Scaling capabilities
 
-Because each Node is a separate entity, there are significant scaling advantages to choosing a Hub setup over a Single Community + Subcommunities setup.
+Because each Node is a separate entity, there are significant scaling advantages to choosing a hub setup over a single community + subcommunities setup.
 
 ### Suggested setups
 
-For small-to-medium sites, use a Single Community. Add Subcommunities for multi-locale support or to combine several micro-forums into a single instance.
+For small-to-medium sites, use a single community. Add subcommunities for multi-locale support or to combine several micro-forums into a single instance.
 
 For very large or franchise sites, use a dedicated Hub with a Node per locale. This provides maximum scaling potential.
 

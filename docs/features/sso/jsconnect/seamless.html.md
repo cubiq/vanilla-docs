@@ -82,7 +82,7 @@ callback({"name": "", "photourl": ""});
     "name": "John Doe", // REQUIRED. The name of the user on your site.
     "email": "johndoe@noreply.com", // REQUIRED. The user's email address
     "photourl": "http://nosite.com/johndoe.png", // OPTIONAL. A photo for the user.
-    "roles": "member,administrator", // OPTIONAL. You can configure jsconnect to synchronise roles
+    "roles": "member,administrator", // OPTIONAL. You can configure jsConnect to synchronize roles
     "client_id": "123456789", // REQUIRED. Your client ID.
     "signature": "cdb398fdab244999d8ba301eb6334298" // REQUIRED. The signature of this response.
 });</pre>

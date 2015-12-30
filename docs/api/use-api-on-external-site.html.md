@@ -11,7 +11,7 @@ The Vanilla Forums API can be used to display information from your community ou
 
 ## JSONP
 
-Default browser security does not let you make API calls from an external site. This is necessary to prevent a wide range of hacking and in general keeps the web a safter place. However, to get around this limitation with the API Vanilla uses a technology called JSONP. There are some small differences with the way JSONP is used as apposed to basic AJAX, but most framewords such as jQuery have built in support for JSONP making it very easy to use.
+Default browser security does not let you make API calls from an external site. This is necessary to prevent a wide range of hacking and in general keeps the web a safer place. However, to get around this limitation with the API Vanilla uses a technology called JSONP. There are some small differences with the way JSONP is used as apposed to basic AJAX, but most frameworks such as jQuery have built in support for JSONP making it very easy to use.
 
 *In order to use JSONP with the Vanilla API you must have JSONP support turned on for your community. Ask support and they'll be happy to do this for you.*
 

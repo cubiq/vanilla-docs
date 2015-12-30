@@ -22,7 +22,7 @@ We currently plan to move to PHP 5.5 after the fork for 2.3. These plans may cha
 
 ## Check out CodeSniffer
 
-CodeSniffer is a tool you can plug into your IDE to help you adhere to a coding standard like this one. This quick guide assumes you have both PEAR and homebrew with PHP 5.5 installed. 
+CodeSniffer is a tool you can plug into your IDE to help you adhere to a coding standard like this one. This quick guide assumes you have both PEAR and homebrew with PHP 5.5 installed.
 
 Our standard is in [Vanilla's Addons repo](http://github.com/vanillaforums/addons), where you can submit issues and pull requests. Its contents will help you on your way.
 
@@ -96,7 +96,7 @@ This example encompasses some of the rules below as a quick overview:
  * The is the foo class that does foo.
  *
  * This is a longer description that spans multiple
- * liness.
+ * lines.
  */
 class Foo extends Bar implements FooInterface {
     /**

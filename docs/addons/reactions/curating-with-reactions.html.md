@@ -16,7 +16,7 @@ Promote is a special reaction. Only users with the "Curation" permission (or tha
 
 Discussions or comments with five or more points assigned to it will be added to the Best Of page and will get the "promoted" CSS class added to them. These points can come from any type of reaction.
 
-After content is added to the Best Of page, it is never removed, no matter what its future point total is. The "promoted" CSS class is reevaluated as point totals change. You can use this special class to style promoted content different (like highlighting it with a special bacground color).
+After content is added to the Best Of page, it is never removed, no matter what its future point total is. The "promoted" CSS class is reevaluated as point totals change. You can use this special class to style promoted content different (like highlighting it with a special background color).
 
 ## Burying content
 

@@ -31,7 +31,7 @@ Level 4, set the same as Level 3, plus:
 * Signatures: Give
 * Discussion & Comment Editing: Authors may edit for 1 week
 
-"Signatures" are snippets of text or images that a user may add to their profile which will show after every commment they make. You must have the Signatures addon enabled for this to work.
+"Signatures" are snippets of text or images that a user may add to their profile which will show after every comment they make. You must have the Signatures addon enabled for this to work.
 
 Discussion & Comment Editing is something that makes forum use more enjoyable for members, but has a high potential for abuse. Therefore, only more trusted members should have longer editing time windows.
 

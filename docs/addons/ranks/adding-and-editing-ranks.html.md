@@ -34,16 +34,16 @@ If you create a manually assigned rank and do not want any automated ranks to ov
 
 ## Setting Criteria
 
-You can set threshholds for:
+You can set thresholds for:
 
 * Points
 * Posts (comments + discussions)
 * Duration of membership
 * Permission level (e.g. moderator or admin)
 
-All threshholds you set must be met for the rank to be assigned. For instance, if you set Points to 50 and posts to 10, it means a member must have 50 points AND 10 posts to be assigned the rank.
+All thresholds you set must be met for the rank to be assigned. For instance, if you set Points to 50 and posts to 10, it means a member must have 50 points AND 10 posts to be assigned the rank.
 
-Checking "Assigned Manually" means the criteria is ignored and the rank will only be asigned by a moderator or administrator editing the user's profile and selecting the rank.
+Checking "Assigned Manually" means the criteria is ignored and the rank will only be assigned by a moderator or administrator editing the user's profile and selecting the rank.
 
 ## Manually Assigning a Rank
 

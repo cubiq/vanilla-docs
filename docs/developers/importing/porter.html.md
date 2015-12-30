@@ -10,7 +10,7 @@ Vanilla Porter is the [export tool](http://vanillaforums.org/addon/porter-core) 
 
 1. Export your old forum data to a special "Porter file".
 2. Create a new Vanilla forum.
-3. Import the Porter file in Vanilla's Dashbord.
+3. Import the Porter file in Vanilla's Dashboard.
 4. Verify & finalize your new forum.
 
 Vanilla Porter **requires** a MySQL database and PHP 5.3+ with zlib support enabled.
@@ -73,7 +73,7 @@ In order to import your data, you will need a fresh installation of [Vanilla](ht
 
 1. The import runs a while depending on how much data you have. If it's more than a million posts, you can make a cup of tea and check Twitter.
 
-1. Click **Finish** to cleanup and finalize the import. 
+1. Click **Finish** to cleanup and finalize the import.
 
 Welcome to Vanilla! Notice you are now logged in as the username you entered. The password is the one you created your Vanilla forum with. Below are some more things you should do to get your new forum ready.
 
@@ -88,7 +88,7 @@ These are things to do after your Vanilla import. This includes manually visitin
 
 1. **Users:** View your Users page in the Dashboard to verify users were imported correctly and are all assigned to a role.
 
-1. **Roles & Permissions:** Many imports reset permisions. It is very import you edit each role in turn to review and correct them. 
+1. **Roles & Permissions:** Many imports reset permissions. It is very import you edit each role in turn to review and correct them.
 
 1. **Default Roles:** Visit the URL `/role/defaultroles` to make sure your visitor, default, and applicant roles are assigned correctly.
 
@@ -107,7 +107,7 @@ This part contains nauseating levels of detail about aspects of migrating that h
 
 #### Large forums
 
-Forums with over 1 million posts may take a long time to migrate on low-budget hosting plans and cause intense resource usage or downtime while it runs. Forums with over 10 million posts make take a very long time & cause strain on *any* hosting plan. 
+Forums with over 1 million posts may take a long time to migrate on low-budget hosting plans and cause intense resource usage or downtime while it runs. Forums with over 10 million posts make take a very long time & cause strain on *any* hosting plan.
 
 For advanced users in these circumstances, copy your database to a localhost installation and run the Porter via the command line. See the [Vanilla Porter repository and README](https://github.com/vanilla/porter) for more information. We likewise recommend importing to a localhost copy of Vanilla and running your verification & finalization steps locally, and repeating the **Default Roles** step after copying the database to production.
 
@@ -128,7 +128,7 @@ Data in non-MySQL formats (MSSQL, PostgreSQL, XML, CSV, JSON) should first be co
 
 #### Passwords
 
-Vanilla natively supports many legacy password schemes for other forums. This means users do not need to reset their password if you're coming from a platform we support (see the vanilla2export.php file for availability). 
+Vanilla natively supports many legacy password schemes for other forums. This means users do not need to reset their password if you're coming from a platform we support (see the vanilla2export.php file for availability).
 
 If you run into problems, your platform isn't supported, or want to reset them anyway, you can run this SQL query (via a tool like phpMyAdmin) to reset all passwords: `update GDN_User set HashMethod = 'Reset' where Admin < 1;` (the `where` clause there prevents resetting your superadmin password). This does not trigger any notification emails; users will be alerted they must reset their password on their next login attempt.
 
@@ -137,7 +137,7 @@ If you run into problems, your platform isn't supported, or want to reset them a
 
 Many legacy platform redirects can be handled by the **Redirector** plugin in the [Addons repository](https://github.com/vanilla/addons). Simply enable the plugin. Check the description for what it supports currently.
 
-You can create custom redirects as needed using the [Routes](/developers/routes) feature in the Dashboard. Use regular expressions to match incoming URL patterns and 301 redirects to their new place. Some imports will automatically create Routes for you, so check to see. 
+You can create custom redirects as needed using the [Routes](/developers/routes) feature in the Dashboard. Use regular expressions to match incoming URL patterns and 301 redirects to their new place. Some imports will automatically create Routes for you, so check to see.
 
 If you run the import on localhost and then copy the database to production, be sure to manually transfer those special Routes as well.
 
@@ -164,7 +164,7 @@ Still having trouble? Ask on the [community forum](http://vanillaforums.org/disc
 1. Entering a user email address that does not exist in the legacy forum.
 2. Unzipping the generated porter file. Leave it zipped and *do not rename it*.
 3. Not having `zlib` installed AND enabled in your PHP install. Confirm this with your host if the file cannot be read.
-2. Not placing the generated porter file direclt in the `uploads` folder.
+2. Not placing the generated porter file directly in the `uploads` folder.
 3. Attempting to 'Browse' for the file rather than selecting it with the multiple choice selector above that.
 
 Still having trouble? Ask on the [community forum](http://vanillaforums.org/discussions).
@@ -174,7 +174,7 @@ Still having trouble? Ask on the [community forum](http://vanillaforums.org/disc
 
 Review the support table included in the vanilla2export.php file (by browsing to it in a web browser and clicking the link) and verify that data is included in that platform.
 
-**Is it supported?** If so, ask on the [community forum](http://vanillaforums.org/discussions). If you can find the technical reason it didn't work, please file an [issue on the GitHub respository](https://github.com/vanilla/porter/issues).
+**Is it supported?** If so, ask on the [community forum](http://vanillaforums.org/discussions). If you can find the technical reason it didn't work, please file an [issue on the GitHub repository](https://github.com/vanilla/porter/issues).
 
 **Not supported?** You can request support be added on the GitHub repository. If you do this, *please be prepared to supply a copy of your forum database* as a sample. For password support, first create a new user with a password you can share for testing purposes.
 

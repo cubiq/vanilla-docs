@@ -6,7 +6,7 @@ categories: ["Developers","Framework"]
 
 ## Datasets
 
-The `Gdn_Dataset` object is a way to store data. Most of the time, this data is the result of a query to the database. When you use our [database object](/developers/framework/database) (as you always should) to exectute a database select query, it will return a dataset.
+The `Gdn_Dataset` object is a way to store data. Most of the time, this data is the result of a query to the database. When you use our [database object](/developers/framework/database) (as you always should) to execute a database select query, it will return a dataset.
 
 Here are a few commonly used methods you'll want to know about:
 
@@ -34,7 +34,7 @@ $users = Gdn::sql()
     ->from('User')
     ->where('CountComments', 1)
     ->get();
-    
+
 foreach ($result->resultArray() as $user) {
 	// Do something to each user with 1 comment.
 }

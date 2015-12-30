@@ -48,7 +48,7 @@ Migration data should always be sent to Vanilla via SFTP, available by request t
   -----BEGIN PGP PUBLIC KEY BLOCK-----
   Version: GnuPG/MacGPG2 v2.0.20 (Darwin)
   Comment: GPGTools - https://gpgtools.org
-  
+
   mQENBFOPIr0BCACy3qGvAMOG48rmqHwPchaot4YL1W7LoWUaNGNr5YjqnRhdMy8c
   vca5Si0Z1QJ57N1cYjtG9+75IpUDZ0KhCaVzx4Smaqmx2Ezgp79/Kr4hY5tdHvky
   0W8B0XNU9U5hJtPuSW0wCpiF68du1d5OcVDDuCe1f4vCwJbiZwluNeIUrUTZeKI1
@@ -83,6 +83,6 @@ Migration data should always be sent to Vanilla via SFTP, available by request t
 
 If a client does not wish to provide email addresses during a migration, we recommend formulating dummy email addresses. We can do this automatically during the import if requested. Example: `{uniqueid}@yourdomain.com`, where `{uniqueid}` is your equivalent of our `UserID` - a non-private, unique identifier for the user.
 
-Most [single sign-on services](http://docs.vanillaforums.com/features/sso/) work by matching accounts based on email address. To work in this scenario, the authentication endpoint must contruct (or have on record) an identical dummy email address. This allows the seamless authentication of the user against the correct account without using real personal info.
+Most [single sign-on services](http://docs.vanillaforums.com/features/sso/) work by matching accounts based on email address. To work in this scenario, the authentication endpoint must construct (or have on record) an identical dummy email address. This allows the seamless authentication of the user against the correct account without using real personal info.
 
 More information is available from our [Privacy Policy](https://vanillaforums.com/info/privacy) and our [developer docs on data privacy](/developers/data-privacy).

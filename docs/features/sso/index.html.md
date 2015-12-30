@@ -16,7 +16,7 @@ Vanilla offers three flavors of single sign-on:  [jsConnect](/features/sso/jscon
 
 ## Why jsConnect?
 
-SSO systems are complex. Setting up your own SAML or OAuth system takes a lot of time, and generally is not feasilbe for small-to-medium business owners. 
+SSO systems are complex. Setting up your own SAML or OAuth system takes a lot of time, and generally is not feasible for small-to-medium business owners.
 
 If you have a website that stores your user's identity and the only thing you need to integrate is a forum, jsConnect is a far simpler solution. This is because we've abstracted most of the work to our side of the connection, and provide sample code for making your side.
 
