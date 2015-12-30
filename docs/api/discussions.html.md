@@ -143,7 +143,7 @@ If not provided, perspective will be that of a guest.
 
 Parameter           | Type               | Description
 ---                 | ---                | ---
-`selector`          | `string`           | What property to filter the discussions by. The available selectors are listed in the Selectors and Selections section below.
+__`selector`__      | `string`           | What property to filter the discussions by. The available selectors are listed in the Selectors and Selections section below.
 `selection`         | `string` `integer` | What value to filter the discussions by. Learn more about the possible values in the Selectors and Selections section below.
 `contenttype`       | `string`           | The value can be `all`, `discussions`, or `comments`. You can choose to fetch only comments or only discussions. The default is all.
 `limit`             | `integer`          | The number of posts to fetch. The max number is 50.
