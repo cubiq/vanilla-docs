@@ -10,7 +10,7 @@ categories: ["Theming", "Smarty", "Smarty Functions"]
 {pocket name="string"}
 ```
 
-Writes a pocket to the page.
+Writes a pocket to the page. Pockets placed in the template in this way should have their location set to 'custom'.
 
 ### Parameters
 
