@@ -153,7 +153,7 @@ __`selector`__      | `string`           | What property to filter the discussio
 
 The promoted endpoint only supports filtering by one selector and selection. The available selectors are:
 
-* **role**: Filter posts based on the author's role. The selection can be any one of your forum's role names. Here's an example query string: `?selector=role&selection=Moderator`.
+* **role**: Filter posts based on the author's role. The selection can be one or more of your forum's role names. Here's an example query string: `?selector=role&selection=Moderator%2CAdministrator`.
 * **rank**: Filter posts based on the author's rank. The selection can be any one of your forum's rank names or rank IDs. Here's an example query string selecting by rank name: `?selector=rank&selection=Level%201` or by rank ID: `?selector=rank&selection=1`.
 * **category**: Filter posts based on the content's category. The selection can be the category's url code or the category ID. Here's an example query string selecting by url code: `?selector=category&selection=general` or by category ID: `?selector=category&selection=1`.
 * **score**: Filter posts based on a minimum score. A post's score is determined by reactions. Will only fetch posts with a score greater than the selection. Here's an example query string: `?selector=score&selection=3`.
