@@ -14,7 +14,7 @@ The EmailTemplate object helps to organize the components of an email and prepar
 
 These components are:
 
-* **Title**: A string, placed in a <h1> block before the rest of the email text in the default email template. Can be HTML-formatted or plaintext.
+* **Title**: A string, placed in a `<h1>` block before the rest of the email text in the default email template. Can be HTML-formatted or plaintext.
 * **Lead**: A string, placed just below the title with a font size between the title's and the message's in the default email template. Can be HTML-formatted or plaintext.
 * **Message**: A string, usually containing the meat of the email. Can be HTML-formatted or plaintext.
 * **Footer**: A collection of key/values including the footer text, and the background color and text color. Placed after the rest of the email content in the default email template. The text can be HTML-formatted or plaintext.
