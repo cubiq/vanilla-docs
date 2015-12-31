@@ -6,7 +6,7 @@ categories: ["Features", "Categories"]
 
 ## Using Categories
 
-Categories are how Vanilla organizes discussions. Categories can be added, edited, deleted, sorted, and tiered via the Dashboard. Every discsusion is placed in one (and only one) category. Every forum has a "Categories" page that lists its categories for navigation.
+Categories are how Vanilla organizes discussions. Categories can be added, edited, deleted, sorted, and tiered via the Dashboard. Every discussion is placed in one (and only one) category. Every forum has a "Categories" page that lists its categories for navigation.
 
 ## Adding Categories
 
@@ -28,9 +28,9 @@ If you have the File Uploads addon enabled, you will have a "Allow File Uploads"
 
 "Place nested categories in a comma-delimited list" is a way of making sub-categories more compact on the Categories page. We recommend keeping the default (2 levels deep) in most cases.
 
-The option "Display root categories as headings" should only be used if you have orgnanized your categories into 2 or more tiers (so that some categories are indented under others). It turns the top-level categories into text "headers" that cannot be posted in directly. Therefore, if you have only 1 tier of forums (a list with no indents) it will lockdown all your categories and make it impossible to start a new discussion.
+The option "Display root categories as headings" should only be used if you have organized your categories into 2 or more tiers (so that some categories are indented under others). It turns the top-level categories into text "headers" that cannot be posted in directly. Therefore, if you have only 1 tier of forums (a list with no indents) it will lockdown all your categories and make it impossible to start a new discussion.
 
-"Do not display the categories in the side panel" hides the default category list that shows up in the panel as a shortcut. Select this option if you have many categories (more than a dozen) that would make the list unwieldly.
+"Do not display the categories in the side panel" hides the default category list that shows up in the panel as a shortcut. Select this option if you have many categories (more than a dozen) that would make the list unwieldy.
 
 ## Organizing Categories
 
@@ -44,7 +44,7 @@ On the "Homepage" settings page in your Dashboard under "Category Layout" there 
 
 To edit a category, click the "Edit" button beside it in the Categories list in the Dashboard. When editing a category, you can Archive it. This hides the category and hides all of its discussions from the Recent Discussions list. It still obeys its normal permissions for posting.
 
-## Move All Disussions
+## Move All Discussions
 
 To move all discussions from one category to another, delete the category.
 

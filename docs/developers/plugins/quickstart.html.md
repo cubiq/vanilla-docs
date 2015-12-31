@@ -15,7 +15,7 @@ categories: ["Developers","Addons"]
 
 Vanilla is built on an object-oriented, MVC framework. If you're coming at this from a mostly function-based world like WordPress or Drupal, this might read like moonspeak. That's OK! Soak it up and ask questions on the forum after you follow this guide and play with the examples.
 
-Ready to code? Grab the [Example plugin](http://vanillaforums.org/addon/example-plugin) and use it below for an even quicker start. Hang onto your butts, here we go: 
+Ready to code? Grab the [Example plugin](http://vanillaforums.org/addon/example-plugin) and use it below for an even quicker start. Hang onto your butts, here we go:
 
 1. Name your plugin.
 1. Define your plugin.
@@ -59,7 +59,7 @@ Provide a great `Description` that briefly explains what your plugin does from t
 
 The `Author` parameters are at your discretion. We recommend using a support address for both the email and URL.
 
-The `MobileFriendly` parameter allows the plugin to be automatically disabled when accessing the site via a mobile device. We recommend definining it as `TRUE`. If omitted, it defaults to `FALSE`.
+The `MobileFriendly` parameter allows the plugin to be automatically disabled when accessing the site via a mobile device. We recommend defining it as `TRUE`. If omitted, it defaults to `FALSE`.
 
 All further optional parameters described below default to `FALSE` if not defined.
 
@@ -85,7 +85,7 @@ You can require a certain version of Vanilla or that other plugins be enabled be
 Require some other plugins to be enabled first in much the same way:
 
 ```
-   'RequiredPlugins' => array('Akistmet' => '1.0.1', 'StopForumSpam' => '1.0'),
+   'RequiredPlugins' => array('Akismet' => '1.0.1', 'StopForumSpam' => '1.0'),
 ```
 
 Note that this only requires them at the time of enabling. A user could later disable the plugin(s). Therefore, it is very important to **use defensive programming techniques to guard against missing prerequisites**, rather than simply assuming they will always be there just because you put it in the requirements.
@@ -93,9 +93,9 @@ Note that this only requires them at the time of enabling. A user could later di
 
 #### Define new permissions
 
-Adding new permisions via plugin is easy. Any defined here will be added as soon as the plugin is enabled. It's important to know more about [using permissions in Vanilla](http://docs.vanillaforums.com/developers/framework/permissions/) before doing this.
+Adding new permissions via plugin is easy. Any defined here will be added as soon as the plugin is enabled. It's important to know more about [using permissions in Vanilla](http://docs.vanillaforums.com/developers/framework/permissions/) before doing this.
 
-You can provide an array of permission names using dot syntax. You can optionally use key/value pairs to set a default (`1` will give all roles the permission; `0` is the default and leaves it off for all roles to start). 
+You can provide an array of permission names using dot syntax. You can optionally use key/value pairs to set a default (`1` will give all roles the permission; `0` is the default and leaves it off for all roles to start).
 
 ```
 'RegisterPermissions' => array('FancyPlugin.DoStuff.Add' => 1),
@@ -135,7 +135,7 @@ class FancyPlugin extends Gdn_Plugin() {
 }
 ```
 
-Inside the class, give methods special names to invoke hooks. Most hooks in a plugin are written like this: 
+Inside the class, give methods special names to invoke hooks. Most hooks in a plugin are written like this:
 
 ```
 public function SomeController_SomeEvent_Handler($Sender, $Args) {
@@ -178,7 +178,7 @@ public function AssetModel_StyleCss_Handler($Sender) {
 }
 ```
 
-Note the second parameter is the folder. 
+Note the second parameter is the folder.
 
 To include a CSS file in a specific page (e.g. the Discussions list):
 

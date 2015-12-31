@@ -9,7 +9,7 @@ hidden: true
 
 Details about API endpoints for moderation.
 
-Simple API will be needed to make requests from an un authencticated request.
+Simple API will be needed to make requests from an un authenticated request.
 To use Simple API you need to:
 
 1. Enable to SimpleAPI Plugin
@@ -121,7 +121,7 @@ Parameter       | Type      | Description
 `Page`          | `string`  | Page Number. Default is first page.
 `CategoryID`    | `int`     | Category ID. Default all categories.
 `Status`        | `string`  | approved, denied, unread
-`SortOrder`     | `string`  | asc, or desc. Deafult desc.
+`SortOrder`     | `string`  | asc, or desc. Default desc.
 
 ### Example
 

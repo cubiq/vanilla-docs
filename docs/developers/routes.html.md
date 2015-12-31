@@ -20,17 +20,17 @@ There are four pre-defined routes that have special meaning. They are:
 
 #### Custom Routes
 
-Custom routes allow you to create more "user-friendly" urls for commonly requested pages in your installation. For example, if you had a popular discussion at the following url: 
+Custom routes allow you to create more "user-friendly" urls for commonly requested pages in your installation. For example, if you had a popular discussion at the following url:
 
-http://yourdomain.com/community/discussion/1250/hampsters-gonna-hampst 
+http://yourdomain.com/community/discussion/1250/hampsters-gonna-hampst
 
 You could create a route to this discussion by adding a new custom route with the following values:
 
-* **Route Expression:** hampsters
-* **Target:** discussion/12500/hampsters-gonna-hampst
+* **Route Expression:** hamsters
+* **Target:** discussion/12500/hampsters-gonna-hamst
 * **Type:** internal
 
-With this route in place, users will be able to get at your hampster discussion by going to: http://yourdomain.com/community/hampsters. Your old URL will continue to work as well, and this will not affect search engine ranking as we tell the search engines what the canonical url is for every page (Google will treat duplicate routes to the same content as one page).
+With this route in place, users will be able to get at your hamster discussion by going to: http://yourdomain.com/community/hamsters. Your old URL will continue to work as well, and this will not affect search engine ranking as we tell the search engines what the canonical url is for every page (Google will treat duplicate routes to the same content as one page).
 
 #### Route Types
 

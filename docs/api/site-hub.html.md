@@ -8,7 +8,7 @@ categories: ["API"]
 
 The site hub is a special service for VIP customers. It allows you to create sites on your VIP cluster and is used for people that want to integrate communities within their entire organization. You can make hub api calls just like other api calls, but you make those calls against your site hub rather than an individual site. Most hub api calls will be against `https://yourdomain.com/hub/api/v1`.
 
-*Note: All endpoints for multisites require an access token with administrative privledges.*
+*Note: All endpoints for multisites require an access token with administrative privileges.*
 
 ## GET /multisites
 
@@ -69,6 +69,6 @@ POST /hub/api/v1/multisites/syncnode.json?access_token=token HTTP/1.1
 Host: https://yoursite.vanillaforums.com
 ```
 
-Syncronize the sites against the hub. Note that this method doesn't have to be called as the nodes automatically synchronize every 20 minites.
+Synchronize the sites against the hub. Note that this method doesn't have to be called as the nodes automatically synchronize every 20 minutes.
 
 [__Authentication__](../#making-api-calls): required

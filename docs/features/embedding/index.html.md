@@ -14,10 +14,10 @@ Embedding Vanilla Forums works by putting a snippet of code on your website page
 2.  Ensure you have ***"Enabled Embedding"*** in your dashboard.
 3.  Make sure that the page in which you embed is free of javascript errors.
 
-Some considerations when it comes to  Embedding: 
+Some considerations when it comes to  Embedding:
 
-1. The possiblity of slower loading times, as your site needs to load the forum via JavaScript along with any other content you may have loading via JavaScript.
-2. Issues with SEO, as Google (and other serach engines) don't always do a great job of indexing framed content.
+1. The possibility of slower loading times, as your site needs to load the forum via JavaScript along with any other content you may have loading via JavaScript.
+2. Issues with SEO, as Google (and other search engines) don't always do a great job of indexing framed content.
 
 ## Embedding comments
 

@@ -23,7 +23,7 @@ Your endpoint needs to say 1 of 3 things when it's called:
 2. User is logged in here, but this wasn't a secure request (no signature + timestamp), so here's their **name & photo only**.
 3. User is logged in AND this was securely requested, so here's **all the user data** (including email and a unique ID from your system, which are required).
 
-Our example libaries help you structure the output so that jsConnect can read it correctly. **If we provide a client library that you can use then we highly recommend using it.**
+Our example libraries help you structure the output so that jsConnect can read it correctly. **If we provide a client library that you can use then we highly recommend using it.**
 
 These libraries are open source and maintained on Github:
 
@@ -52,13 +52,13 @@ To get very tight SSO integration, you will also want to follow these steps. Alw
 
 1. Change your registration method to 'Connect' to block non-SSO users from registering.
 2. Set your sign-in, sign-out, and registration URLs under jsConnect's settings in your Dashboard.
-3. Check "Make this connection your default signin method." 
+3. Check "Make this connection your default signin method."
 4. When linking or redirecting signed-in users to your forum, use the `/sso` endpoint on the forum. This triggers jsConnect's user lookup **on the connection with "default sign in method" selected** without the user needing to click. Optionally, you can provide a `Target` parameter with a relative path to specify where they should ultimately land on the forum. Example: `http://forum.yoursite.com/sso?Target=/categories`. This is the final critical step in a fully seamless experience.
 5. For seamless SSO on an embedded forum, see our [embedded SSO solution](http://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/).
 
 ## Testing the integration
 
-Use the "Test URL" link under your jsConnect settings to see if your endpoint is returning a good response. 
+Use the "Test URL" link under your jsConnect settings to see if your endpoint is returning a good response.
 
 Try using your browser's Incognite/Private window mode for testing. This allows you to have a separate "test" session while you stay logged in as the administrator in your main session to make changes quickly.
 
@@ -85,7 +85,7 @@ If you've followed all the steps above, the only way a user can be not signed in
 
 We bounce them to your sign-in page after they sign-out on the forum. To do the opposite, redirect users thru our sign-out page, again passing a `Target` parameter so they finish where you want them to.
 
-**Does this work for native applications, non-web scenarios, or third-party products?** 
+**Does this work for native applications, non-web scenarios, or third-party products?**
 
 No. jsConnect is purely a web-based SSO workflow for your existing login system. We have separate products for popular third-party platforms and non-web scenarios.
 
@@ -95,7 +95,7 @@ Not at this time.
 
 **Can we use jsConnect without providing an email address?**
 
-No. You absolutely must send an email, which is the only method for mapping users. If you are importing forum users without email addresses and need a way to map them over SSO, we recommend using dummy email addresses that follow a formula like `{uniqueID}`@yoursite.com. 
+No. You absolutely must send an email, which is the only method for mapping users. If you are importing forum users without email addresses and need a way to map them over SSO, we recommend using dummy email addresses that follow a formula like `{uniqueID}`@yoursite.com.
 
 **Our system has overlapping names but Vanilla needs unique ones. How can we handle this?**
 

@@ -8,7 +8,7 @@ categories: ["Features", "Addons"]
 
 Groups is an addon for very large communities to allow their users to form their own discussion groups. These groups allows for having discussions outside the normal forum category structure in self-contained areas. Very large communities can be difficult to approach for new users. Groups can be a useful way for users to find other folks with common interests or backgrounds.
 
-Groups have an events list, their own announcements, and leaders who run the show. Users can join a group freely, by application, or by invitation. Your normal moderators (with the permision Moderation.Manage) will have the ability to moderate inside groups as well.
+Groups have an events list, their own announcements, and leaders who run the show. Users can join a group freely, by application, or by invitation. Your normal moderators (with the permission Moderation.Manage) will have the ability to moderate inside groups as well.
 
 ## Why only very large communities?
 

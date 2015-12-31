@@ -14,7 +14,7 @@ Ranks can be assigned automatically or manually. You can configure automatic ran
 
 ## Why use Ranks?
 
-Ranks can solve a number of challenges forum owners face. They can limit malicious practices, publicly identify certain types of members, reward users for participation, or allow vetean members a greater deal of control on your forum. Once you learn how Ranks work, you will have a powerful tool for creating new functionality.
+Ranks can solve a number of challenges forum owners face. They can limit malicious practices, publicly identify certain types of members, reward users for participation, or allow veteran members a greater deal of control on your forum. Once you learn how Ranks work, you will have a powerful tool for creating new functionality.
 
 ## Default ranks
 

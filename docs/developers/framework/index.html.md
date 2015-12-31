@@ -12,7 +12,7 @@ Technically, Vanilla is a forum application (addon) built on top of the Garden f
 
 If we had it all to do over, we would just call the whole thing "Vanilla" and name the forum application "Forum". But now we're stuck with GDN prefixes all over the place; c'est la vie.
 
-The framework is a secondary concern to the forum. In practice, this means if you request an ehancement or find a bug in a framework piece that isn't used anywhere in the forum, we'd love a pull request but it's unlikely we'll devote developer time to it. Time is precious, and we're building awesome forums not CodeIgniter 2 (or whatever the hip kids are using these days).
+The framework is a secondary concern to the forum. In practice, this means if you request an enhancement or find a bug in a framework piece that isn't used anywhere in the forum, we'd love a pull request but it's unlikely we'll devote developer time to it. Time is precious, and we're building awesome forums not CodeIgniter 2 (or whatever the hip kids are using these days).
 
 ## Addons are everything
 
@@ -33,7 +33,7 @@ Themes have the full power of plugins via their hooks file, but we suggest only 
 
 The core framework files are located in `/library/core`. The database layer is contained in `/library/database` and third-party libraries are in `/library/vendors`. All our junk is in `/trunk`.
 
-Our framework's frontend is built on Javascript and jQuery. jQuery files and plugins are in `/js/library` while files in the root `js` folder are custom to our framework. 
+Our framework's frontend is built on Javascript and jQuery. jQuery files and plugins are in `/js/library` while files in the root `js` folder are custom to our framework.
 
 Common subfolders in addons will include `design` (CSS and images), `js`, `modules`, `views`, and `settings` (structure and config).
 

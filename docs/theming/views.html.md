@@ -23,7 +23,7 @@ You can accomplish a great deal of things using Smarty in your default master vi
 
 ##### Required tags
 
-There are a few assets that need to appear and an event that needs to be fired from your master view in order for everything to run smoothly. (To learn more about assets and events, check out [our framework docs](/developers/framework).) The contents of these tags are programatically generated, depending on your forum's data and configuration. Omitting any one of these tags may result in some strange behaviour on your forum.
+There are a few assets that need to appear and an event that needs to be fired from your master view in order for everything to run smoothly. (To learn more about assets and events, check out [our framework docs](/developers/framework).) The contents of these tags are programmatically generated, depending on your forum's data and configuration. Omitting any one of these tags may result in some strange behaviour on your forum.
 
 1. **The head asset** `{asset name="Head"}` This should appear within the head `<head>` block of your html. It contains the css and javascript needed for your applications and plugins.
 2. **The content asset** `{asset name="Content"}` This should appear within the body `<body>` block of your html. It contains the main content of any page.
@@ -36,7 +36,7 @@ There are a few assets that need to appear and an event that needs to be fired f
 1. **Searchbox** `{searchbox}` Adds a handy little searchbox.
 2. **Breadcrumbs** `{breadcrumbs}` Adds breadcrumbs, a crucial detail when navigating a forum.
 3. **The Me module** `{module name="MeModule"}` Adds the Me module. This module contains dropdowns for notifications, bookmarks, conversations and settings. It helps a logged-in user access what's important to them.
-4. **Opening body tag** `<body id="{$BodyID}" class="{$BodyClass}">` This is how we recommend opening your body element. It adds programatically generated CSS classes and ids to the body block, which are very useful for targetting sections when styling your forum.
+4. **Opening body tag** `<body id="{$BodyID}" class="{$BodyClass}">` This is how we recommend opening your body element. It adds programmatically generated CSS classes and ids to the body block, which are very useful for targeting sections when styling your forum.
 
 The most up-to-date set of Smarty functions and modifiers can be tracked down in /library/vendors/SmartyPlugins.
 

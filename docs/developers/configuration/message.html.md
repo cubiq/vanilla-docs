@@ -13,6 +13,6 @@ Messages can be added to your forum by clicking on the Add Message button when o
 Message options:
 
 1. You can determine on which page a Message will seen, for example just on the profile page.
-2. You can add a Message to a specfic category.
-3. You decide the poisiton on the page the Message appears, for example below the sidebar.
-4. There are 4 kinds of Messages available in Vanilla: Casual, Information, Alert and Warning. Each with a disctinctive color you can modify in your CSS.
+2. You can add a Message to a specific category.
+3. You decide the position on the page the Message appears, for example below the sidebar.
+4. There are 4 kinds of Messages available in Vanilla: Casual, Information, Alert and Warning. Each with a distinctive color you can modify in your CSS.

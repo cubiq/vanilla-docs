@@ -12,7 +12,7 @@ Ranks can be used to limit the ability of spammers to take advantage of your sit
 
 This guide is for communities currently having spam problems that have already tried other automated filtering solutions like Akismet and Stop Forum Spam. Because this solution inhibits new user actions which can have a detrimental effect, it should be used as a response to issues not as preemptive prevention.
 
-## Setting up Ranks to inihibit spam and abuse
+## Setting up Ranks to inhibit spam and abuse
 
 What follows is a generalized recommendation for a large, high-traffic site. Please adjust the suggested values to match your needs and community.
 

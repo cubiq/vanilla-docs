@@ -10,9 +10,9 @@ Additional logging is available on our highest-tier plans for an additional fee 
 
 The logs are available via a Dashboard page under "Event Log". They can be filtered by date range, event name, and severity. Sorting is chronological or reverse-chronological.
 
-## Events 
+## Events
 
-We are curently able to log the following additional events for auditing purposes.
+We are currently able to log the following additional events for auditing purposes.
 
 ### Authentication & Permissions:
 
