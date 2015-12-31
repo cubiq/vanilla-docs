@@ -10,7 +10,7 @@ categories: ["Theming", "Smarty", "Smarty Functions"]
 {custom_menu format="string" wrap="string"}
 ```
 
-A placeholder for future menu items.
+A bucket for addon menu items. Adds links depending on which addons are enabled.
 
 ### Parameters
 
