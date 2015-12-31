@@ -16,21 +16,21 @@ This functionality can be added simply by editing your theme's about.php file by
 
 In the design folder of your theme, you can add any number of CSS files. The naming convention is `custom_*.css`, where * is the theme variant.
 
-You will still need to have the custom.css file as a default for when the theme is first enabled. In order to allow the admin to switch back to the default, you'll need to copy custom.css to custom_default.css (or custom_anything.css) and provide it as an option.
+You will still need to have the custom.css file as a default for when the theme is first enabled. In order to allow the admin to switch back to the default, you'll need to add an option where the value is simply %s.
 
-So, let's say you have three CSS files you want to let the user chose from: custom_blue.css, custom_green.css, and custom_default.css (a copy of custom.css). This is how your Options array should look:
+So, let's say you have three CSS files you want to let the user chose from: custom_blue.css, custom_green.css, and custom.css (the default). This is how your Options array should look:
 
 ```php
 'Options' => array(
     'Styles' => array(
-        'Default' => '%s_default',
+        'Default' => '%s',
         'Blue' => '%s_blue',
         'Green' => '%s_green',
     ),
 )
 ```
 
-The theme options settings page will also look for screenshots in the design folder of your theme that follow the naming convention of `screenshot_*.ext` where * is the theme variant and the extension is one of png, jpg or gif. If it finds the screenshots, they will be displayed on the theme options settings page.
+The theme options settings page will also look for screenshots in the design folder of your theme that follow the naming convention of `screenshot_*.ext` where * is the theme variant and the extension is one of png, jpg or gif. If it finds the screenshots, they will be displayed on the theme options settings page. Use `screenshot.ext` for the default theme.
 
 ### Adding Custom Text to a Theme
 
