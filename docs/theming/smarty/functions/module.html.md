@@ -26,6 +26,8 @@ You can set any property of a module by specifying it as a parameter as long as 
 
 ### Example
 
-Here's an example of a tag that renders the Promoted Content Module, a module that filters discussions based on role, rank, score, category, or the promoted reaction:
+Here's an example of a tag that renders the Promoted Content Module, a module that can filter discussions based on role, rank, score, category, or the promoted reaction:
 
+```
 {module name="PromotedContentModule" Selector="role" Selection="Developer,Administrator" Limit="12" Group="3"}
+```

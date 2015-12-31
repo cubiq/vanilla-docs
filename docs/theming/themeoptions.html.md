@@ -54,7 +54,7 @@ Then you could insert the text into your theme using the Smarty tag:
 {text code="Custom&nbsp;Text" default="Some default custom text"}
 ```
 
-The text is saved in your config, so you could also access it in PHP using `c('ThemeOption.Custom&nbsp;Text', "Some default custom text");`
+The text is saved in your config, so you could also access it in PHP using `c('ThemeOption.Custom&nbsp;Text', "Some default custom text");` [Learn more about the config here.](../developers/configuration/using.html.md)
 
 ### Example
 

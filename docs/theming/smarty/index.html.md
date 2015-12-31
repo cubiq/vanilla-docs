@@ -23,3 +23,7 @@ Some smarty functions in Vanilla can include parameters. For example, here `{bre
 ### Smarty Conditional Functions
 
 Vanilla's Smarty implementation has whitelisted a number of functions that can be used in Smarty conditional statements. For example, you can insert a Smarty tag or a snippet of HTML into your template only if the user is in a specific section or has a specific permission. These functions and how they can be used in your template, as well as a basic overview on using Smarty conditionals are outlined in [Smarty Conditionals](/conditionals.html.md).
+
+### Smarty Modifiers
+
+Smarty modifiers can be applied to variables, custom functions or strings. Vanilla-implemented modifiers and a general overview of modifiers can be found on the [Smarty Modifiers](/modifiers.html.md) page.

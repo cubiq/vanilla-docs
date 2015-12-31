@@ -22,6 +22,10 @@ Parameter | Type      | Default                                    | Description
 `text`    | `string`  | varies depending on link                   | What the text for the link should be.
 `format`  | `string`  | `<a href="%url" class="%class">%text</a>`  | Custom format to use when wrapping links. Available template variables are `%url`, `%class`, and `%text`
 
+### Function: `{bookmarks_link}`
+
+Link to the My Bookmarks page.
+
 ### Function: `{categories_link}`
 
 Link to the categories page.
