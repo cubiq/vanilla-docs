@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Time: Thu Dec 31 2015 21:49:09 GMT+0000 (UTC)
+# Time: Sun Jan 03 2016 16:50:30 GMT+0000 (UTC)
 
 CACHE:
 addons/badges/adding-and-editing-badges/
@@ -112,25 +112,32 @@ theming/css/
 theming/hooks/
 theming/
 theming/quickstart/
-theming/smarty/asset/
-theming/smarty/breadcrumbs/
-theming/smarty/custom-menu/
-theming/smarty/event/
-theming/smarty/i18n/
+theming/smarty/conditionals/
+theming/smarty/functions/asset/
+theming/smarty/functions/breadcrumbs/
+theming/smarty/functions/custom-menu/
+theming/smarty/functions/event/
+theming/smarty/functions/i18n/
+theming/smarty/functions/include-file/
+theming/smarty/functions/
+theming/smarty/functions/link/
+theming/smarty/functions/logo/
+theming/smarty/functions/mobile-logo/
+theming/smarty/functions/module/
+theming/smarty/functions/page-links/
+theming/smarty/functions/permission/
+theming/smarty/functions/pocket/
+theming/smarty/functions/searchbox/
+theming/smarty/functions/text/
 theming/smarty/
-theming/smarty/link/
-theming/smarty/logo/
-theming/smarty/mobile-logo/
-theming/smarty/permission/
-theming/smarty/pocket/
-theming/smarty/searchbox/
-theming/smarty/text/
+theming/smarty/modifiers/
+theming/themeoptions/
 theming/views/
 addons/googleplus/images/Google_Developers_Console_Settings.fb71fd80.png
 addons/vanilla-pop/images/vanilla-pop.3f751dc2.png
 assets/img/logo.9bdefa97.svg
-assets/main.951d969c.css
 assets/main.b1c8020a.js
+assets/main.d43ae646.css
 features/comments/images/Blog_Comments-settings.ff08eb25.png
 features/comments/images/Blog_Comments_-universal_code.6912b9f3.png
 features/comments/images/Blog_Comments_Universal-Code-Identifier.9dd5638e.png
@@ -138,7 +145,7 @@ features/sso/images/jsconnect-overview.5a58a179.png
 images/dashboard.29d31527.png
 images/reactions-advanced.9ac3f1d4.png
 images/reactions-list.11a51a90.png
-search.191f9856.json
+search.a67aee18.json
 
 NETWORK:
 *

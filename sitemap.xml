@@ -331,40 +331,61 @@
     <loc>http://docs.vanillaforums.com/theming/smarty</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/asset</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/conditionals</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/breadcrumbs</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/custom-menu</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/asset</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/event</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/breadcrumbs</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/i18n</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/custom-menu</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/link</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/event</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/logo</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/i18n</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/mobile-logo</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/include-file</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/permission</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/link</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/pocket</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/logo</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/searchbox</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/mobile-logo</loc>
   </url>
   <url>
-    <loc>http://docs.vanillaforums.com/theming/smarty/text</loc>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/module</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/page-links</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/permission</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/pocket</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/searchbox</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/functions/text</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/smarty/modifiers</loc>
+  </url>
+  <url>
+    <loc>http://docs.vanillaforums.com/theming/themeoptions</loc>
   </url>
   <url>
     <loc>http://docs.vanillaforums.com/theming/views</loc>
