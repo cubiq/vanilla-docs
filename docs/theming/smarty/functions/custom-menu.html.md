@@ -1,7 +1,7 @@
 ---
 title: "{custom_menu}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{custom_menu}`
@@ -10,7 +10,7 @@ categories: ["Theming", "Smarty"]
 {custom_menu format="string" wrap="string"}
 ```
 
-A placeholder for future menu items.
+A bucket for addon menu items. Adds links depending on which addons are enabled.
 
 ### Parameters
 

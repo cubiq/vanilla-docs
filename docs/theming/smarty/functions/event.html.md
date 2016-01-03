@@ -1,7 +1,7 @@
 ---
 title: "{event}"
 layout: docs
-categories: ["Theming", "Smarty"]
+categories: ["Theming", "Smarty", "Smarty Functions"]
 ---
 
 ## Function: `{event}`
@@ -10,7 +10,7 @@ categories: ["Theming", "Smarty"]
 {event name="string"}
 ```
 
-Fire an event with the specified `name`.
+Fire an event with the specified `name`. [Learn more about events in Vanilla.](../../../developers/plugins/#events-%26-handlers)
 
 ### Parameters
 
