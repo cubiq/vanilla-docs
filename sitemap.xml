@@ -127,6 +127,9 @@
     <loc>http://docs.vanillaforums.com/cloud/multisite</loc>
   </url>
   <url>
+    <loc>http://docs.vanillaforums.com/cloud/multisite/sync</loc>
+  </url>
+  <url>
     <loc>http://docs.vanillaforums.com/cloud/repo</loc>
   </url>
   <url>
