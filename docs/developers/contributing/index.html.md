@@ -6,17 +6,23 @@ categories: ["Developers","Contributing"]
 
 # How to Contribute
 
+### General
+
 1. Welcome folks to the [community](http://vanillaforums.org/discussions) and be awesome!
-2. Answer questions for the community.
-3. File detailed issues on [GitHub](https://github.com/vanillaforums/vanilla) (see below).
-4. [Triage](#triaging-issues) issues already reported!
-4. Test [pre-releases](http://vanillaforums.org/categories/blog).
-5. Contribute code via [pull requests](/developers/contributing/pull-requests) (requires [Contributor Agreement](http://vanillaforums.org/contributors))
-6. Contribute revisions & additions to [docs](https://github.com/vanillaforums/VanillaDocs).
-7. Help [translate Vanilla](/developers/locales) into your language.
-8. Audit code for security issues & disclose issues [responsibly](/developers).
-9. Contribute addons & themes to the [Official Directory](http://vanillaforums.org/addons).
-10. Evaluate community addons & offer feedback and pull requests.
+1. Answer questions.
+1. Report [issues](https://github.com/vanillaforums/vanilla) like a pro (see below).
+1. [Triage](#triaging-issues) issues already reported!
+1. Test [pre-releases](http://vanillaforums.org/categories/blog).
+1. Contribute [docs](https://github.com/vanillaforums/VanillaDocs).
+1. Help [translate Vanilla](/developers/locales).
+1. Evaluate community addons & offer feedback.
+1. Do accessibility testing! Unplug your mouse, turn on a screen reader, and see what it's like to use Vanilla.
+
+### Developers
+
+1. Contribute code via [pull requests](/developers/contributing/pull-requests) (requires [Contributor Agreement](http://vanillaforums.org/contributors))
+1. Contribute addons & themes to the [Official Directory](http://vanillaforums.org/addons).
+1. Audit code for security & disclose issues [responsibly](/developers).
 
 Sections of our contribution guidelines are adapted or copied from [Swift](https://swift.org/contributing/) because they are awesome.
 
