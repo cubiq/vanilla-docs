@@ -15,7 +15,7 @@ categories: ["Developers","Addons"]
 
 Vanilla is built on an object-oriented, MVC framework. If you're coming at this from a mostly function-based world like WordPress or Drupal, this might read like moonspeak. That's OK! Soak it up and ask questions on the forum after you follow this guide and play with the examples.
 
-Ready to code? Grab the [Example plugin](http://vanillaforums.org/addon/example-plugin) and use it below for an even quicker start. Hang onto your butts, here we go:
+Ready to code? Grab the [Example plugin](https://github.com/vanilla/addons/blob/master/plugins/Example/class.example.plugin.php) and use it below for an even quicker start. Hang onto your butts, here we go:
 
 1. Name your plugin.
 1. Define your plugin.
